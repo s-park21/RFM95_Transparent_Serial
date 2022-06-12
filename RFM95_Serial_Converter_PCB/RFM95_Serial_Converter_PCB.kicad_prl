@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "7ffffff_80000001",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "RFM95_Serial_Converter.kicad_prl",
+    "filename": "RFM95_Serial_Converter_PCB.kicad_prl",
     "version": 3
   },
   "project": {
