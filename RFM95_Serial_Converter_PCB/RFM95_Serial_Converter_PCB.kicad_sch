@@ -686,7 +686,7 @@
       (reference "Y1") (unit 1) (value "Q13FC1350000200") (footprint "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm")
     )
     (path "/8c77dee1-efa2-4510-b285-c7c296322f31/832395da-501b-4ab2-8a2d-06d8e5a85ec7"
-      (reference "Y2") (unit 1) (value "X322524MOB4SI") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering")
+      (reference "Y2") (unit 1) (value "X322524MOB4SI") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
     )
   )
 )

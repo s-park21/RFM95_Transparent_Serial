@@ -404,7 +404,9 @@
           "Net-(J4-Pad2)",
           "Net-(J4-Pad3)",
           "Net-(J5-Pad2)",
-          "Net-(J5-Pad3)"
+          "Net-(J5-Pad3)",
+          "Net-(R3-Pad2)",
+          "Net-(R4-Pad2)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
