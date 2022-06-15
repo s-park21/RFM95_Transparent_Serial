@@ -443,7 +443,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "RFM95_Serial_Converter_PCB.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

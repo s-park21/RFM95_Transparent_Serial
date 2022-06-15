@@ -1556,7 +1556,7 @@
     (property "Reference" "D1" (id 0) (at 225.171 106.1628 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "BLUE_LED" (id 1) (at 225.171 108.6997 90)
+    (property "Value" "E6X0602QBAC1UDA" (id 1) (at 225.171 108.6997 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 222.25 105.41 0)

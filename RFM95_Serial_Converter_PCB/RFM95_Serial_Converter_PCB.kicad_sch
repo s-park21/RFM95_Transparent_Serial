@@ -614,7 +614,7 @@
       (reference "C17") (unit 1) (value "18pF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/8c77dee1-efa2-4510-b285-c7c296322f31/07be99bc-3222-4b7c-98d1-f07f3cfdd16b"
-      (reference "D1") (unit 1) (value "BLUE_LED") (footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+      (reference "D1") (unit 1) (value "E6X0602QBAC1UDA") (footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/36cfd418-eb3c-4533-9b85-737555299dfa"
       (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm_Pad")
