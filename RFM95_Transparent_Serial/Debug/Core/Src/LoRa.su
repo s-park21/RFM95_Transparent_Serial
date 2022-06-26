@@ -17,3 +17,4 @@
 ../Core/Src/LoRa.c:372:9:LoRa_receive	48	static
 ../Core/Src/LoRa.c:402:5:LoRa_getRSSI	24	static
 ../Core/Src/LoRa.c:415:10:LoRa_init	24	static
+../Core/Src/LoRa.c:489:9:LoRa_received_bytes	16	static

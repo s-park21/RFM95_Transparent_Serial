@@ -429,3 +429,206 @@ Finished building: default.size.stdout
  
 Finished building: RFM95_Transparent_Serial.list
  
+18:09:50 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LoRa.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/LoRa.d" -MT"Core/Src/LoRa.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LoRa.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/LoRa.c:1:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:18: error: incompatible type for argument 1 of 'LoRa_receive'
+  152 |     LoRa_receive(LoRaClass, RF_RX_Buff, RF_avilable_bytes);
+      |                  ^~~~~~~~~
+      |                  |
+      |                  LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:125:28: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  125 | uint8_t LoRa_receive(LoRa* _LoRa, uint8_t* data, uint8_t length);
+      |                      ~~~~~~^~~~~
+../Core/Src/main.c:155:5: error: 'RF_available_bytes' undeclared (first use in this function); did you mean 'RF_avilable_bytes'?
+  155 |     RF_available_bytes = 0;
+      |     ^~~~~~~~~~~~~~~~~~
+      |     RF_avilable_bytes
+../Core/Src/main.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:161:24: error: incompatible type for argument 1 of 'LoRa_transmit'
+  161 |     if (!LoRa_transmit(LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                        ^~~~~~~~~
+      |                        |
+      |                        LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:123:29: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  123 | uint8_t LoRa_transmit(LoRa* _LoRa, uint8_t* data, uint8_t length, uint16_t timeout);
+      |                       ~~~~~~^~~~~
+../Core/Src/main.c:161:46: warning: conversion from 'unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+  161 |     if (!LoRa_transmit(LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                                              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:10:22 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:5: error: 'RF_available_bytes' undeclared (first use in this function); did you mean 'RF_avilable_bytes'?
+  155 |     RF_available_bytes = 0;
+      |     ^~~~~~~~~~~~~~~~~~
+      |     RF_avilable_bytes
+../Core/Src/main.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:161:47: warning: conversion from 'unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+  161 |     if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                                               ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:11:09 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:5: error: 'RF_available_bytes' undeclared (first use in this function); did you mean 'RF_avilable_bytes'?
+  155 |     RF_available_bytes = 0;
+      |     ^~~~~~~~~~~~~~~~~~
+      |     RF_avilable_bytes
+../Core/Src/main.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:161:47: warning: conversion from 'unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+  161 |     if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                                               ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:11:14 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:5: error: 'RF_available_bytes' undeclared (first use in this function); did you mean 'RF_avilable_bytes'?
+  155 |     RF_available_bytes = 0;
+      |     ^~~~~~~~~~~~~~~~~~
+      |     RF_avilable_bytes
+../Core/Src/main.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:161:47: warning: conversion from 'unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+  161 |     if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                                               ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:11:24 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:47: warning: conversion from 'unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+  161 |     if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
+      |                                               ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:12:15 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:374:43: error: incompatible type for argument 1 of 'LoRa_received_bytes'
+  374 |   RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           LoRa {aka struct LoRa_setting}
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:127:35: note: expected 'LoRa *' {aka 'struct LoRa_setting *'} but argument is of type 'LoRa' {aka 'struct LoRa_setting'}
+  127 | uint8_t LoRa_received_bytes(LoRa* _LoRa);
+      |                             ~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:12:36 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+arm-none-eabi-gcc -o "RFM95_Transparent_Serial.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RFM95_Transparent_Serial.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RFM95_Transparent_Serial.elf
+ 
+arm-none-eabi-size   RFM95_Transparent_Serial.elf 
+arm-none-eabi-objdump -h -S  RFM95_Transparent_Serial.elf  > "RFM95_Transparent_Serial.list"
+   text	   data	    bss	    dec	    hex	filename
+  42124	    368	   9560	  52052	   cb54	RFM95_Transparent_Serial.elf
+Finished building: default.size.stdout
+ 
+Finished building: RFM95_Transparent_Serial.list
+ 
+18:16:03 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+make -j8 all 
+arm-none-eabi-size   RFM95_Transparent_Serial.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42124	    368	   9560	  52052	   cb54	RFM95_Transparent_Serial.elf
+Finished building: default.size.stdout
+ 

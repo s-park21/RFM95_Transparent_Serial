@@ -158,7 +158,7 @@ int main(void)
 	  if(UART_READY) {
 		  UART_READY = false;
 		  // Transmit UART buffer over RF
-		  if (!LoRa_transmit(&LoRaClass, UART_Buff, (uint8_t)sizeof(UART_Buff), 1000)) {
+		  if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
 			  // Print error msg
 		  }
 	  }
@@ -371,7 +371,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == LoRaClass.DIO0_pin){
-		RF_avilable_bytes = LoRa_received_bytes(&LoRaClass);
+		RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
 	}
 }
 

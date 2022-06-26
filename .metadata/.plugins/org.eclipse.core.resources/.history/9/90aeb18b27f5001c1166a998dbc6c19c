@@ -52,7 +52,7 @@ UART_HandleTypeDef* USB_UART = &huart1;
 SPI_HandleTypeDef* RF_SPI = &hspi1;
 
 // Variable to store number of available bytes to read
-uint8_t RF_avilable_bytes = 0;
+uint8_t RF_avilable_bytes;
 // RF RX buffer
 uint8_t RF_RX_Buff[256];
 uint8_t UART_Buff[256];
@@ -152,13 +152,13 @@ int main(void)
 		  LoRa_receive(&LoRaClass, RF_RX_Buff, RF_avilable_bytes);
 		  // Transmit bytes from RF_RX_Buff over UART
 		  HAL_UART_Transmit(USB_UART, RF_RX_Buff, RF_avilable_bytes, 1000);
-		  RF_avilable_bytes = 0;
+		  RF_available_bytes = 0;
 	  }
 
 	  if(UART_READY) {
 		  UART_READY = false;
 		  // Transmit UART buffer over RF
-		  if (!LoRa_transmit(&LoRaClass, UART_Buff, (uint8_t)sizeof(UART_Buff), 1000)) {
+		  if (!LoRa_transmit(&LoRaClass, UART_Buff, sizeof(UART_Buff), 1000)) {
 			  // Print error msg
 		  }
 	  }
@@ -371,7 +371,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == LoRaClass.DIO0_pin){
-		RF_avilable_bytes = LoRa_received_bytes(&LoRaClass);
+		RF_avilable_bytes = LoRa_received_bytes(LoRaClass);
 	}
 }
 
