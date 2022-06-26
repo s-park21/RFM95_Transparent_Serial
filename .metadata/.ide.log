@@ -1,0 +1,1442 @@
+2022-06-26 12:29:36,200 [INFO] Activator:177 - 
+
+
+2022-06-26 12:29:36,200 [INFO] Activator:178 - !SESSION log4j initialized
+2022-06-26 12:29:41,545 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-06-26 12:29:49,163 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2022-06-26 12:29:49,555 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913
+2022-06-26 12:29:49,571 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/mcu/
+2022-06-26 12:29:49,571 [INFO] ApiDb:260 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/boardmanager/
+2022-06-26 12:29:49,571 [WARN] ApiDb:245 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/mcufinder/images/
+2022-06-26 12:29:49,587 [INFO] ApiDb:226 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:49,587 [INFO] DbMcusAds:119 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:49,603 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-06-26 12:29:49,712 [INFO] RulesReader:57 - Compatibility file has been processed (281 Rules)
+2022-06-26 12:29:49,807 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/mcu/
+2022-06-26 12:29:49,807 [INFO] ApiDb:260 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/boardmanager/
+2022-06-26 12:29:49,807 [INFO] ApiDb:247 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/mcufinder/images/
+2022-06-26 12:29:49,807 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:49,807 [INFO] ApiDb:226 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:49,807 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:49,807 [INFO] DbMcusAds:119 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:49,807 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:49,807 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:49,807 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-06-26 12:29:49,885 [INFO] MainPanel:230 - HeapMemory: 268435456
+2022-06-26 12:29:50,012 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/mcu/
+2022-06-26 12:29:50,012 [INFO] ApiDb:260 - Set plugin database path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/boardmanager/
+2022-06-26 12:29:50,012 [INFO] ApiDb:247 - Set plugin images path to: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\/plugins/mcufinder/images/
+2022-06-26 12:29:50,012 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:50,012 [INFO] ApiDb:226 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:50,012 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:50,012 [INFO] DbMcusAds:119 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/
+2022-06-26 12:29:50,012 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:50,012 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder/ => C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder
+2022-06-26 12:29:50,012 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-06-26 12:29:50,043 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913
+2022-06-26 12:29:50,043 [INFO] PluginManage:188 - Search for loadable plugins [exclusion list=, ]
+2022-06-26 12:29:50,043 [INFO] PluginManage:302 - Check plugin analytics
+2022-06-26 12:29:50,185 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-06-26 12:29:50,341 [INFO] AnalyticsPlugin:257 - Accepted Software Licenses: 
+2022-06-26 12:29:50,341 [INFO] AnalyticsPlugin:259 - Accepted CMSIS Pack Licenses: 
+2022-06-26 12:29:50,357 [INFO] AnalyticsPlugin:261 - Accepted Firmware Licenses: 
+2022-06-26 12:29:50,357 [INFO] PluginManage:352 - Loaded plugin analytics (category:tool,tabindex:-1)
+2022-06-26 12:29:50,357 [INFO] PluginManage:302 - Check plugin clock
+2022-06-26 12:29:50,389 [INFO] PluginManage:352 - Loaded plugin clock (category:base,tabindex:2)
+2022-06-26 12:29:50,389 [INFO] PluginManage:302 - Check plugin ddr
+2022-06-26 12:29:50,404 [INFO] PluginManage:352 - Loaded plugin ddr (category:tool,tabindex:6)
+2022-06-26 12:29:50,404 [INFO] PluginManage:302 - Check plugin filemanager
+2022-06-26 12:29:50,655 [INFO] PluginManage:352 - Loaded plugin filemanager (category:base,tabindex:10)
+2022-06-26 12:29:50,655 [INFO] PluginManage:302 - Check plugin ipmanager
+2022-06-26 12:29:50,671 [INFO] PluginManage:352 - Loaded plugin ipmanager (category:base,tabindex:5)
+2022-06-26 12:29:50,671 [INFO] PluginManage:302 - Check plugin lpbam
+2022-06-26 12:29:50,687 [INFO] PluginManage:352 - Loaded plugin lpbam (category:base,tabindex:0)
+2022-06-26 12:29:50,687 [INFO] PluginManage:302 - Check plugin pinoutandconfiguration
+2022-06-26 12:29:50,718 [INFO] PluginManage:352 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2022-06-26 12:29:50,718 [INFO] PluginManage:302 - Check plugin pinoutconfig
+2022-06-26 12:29:50,772 [INFO] PluginManage:352 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2022-06-26 12:29:50,772 [INFO] PluginManage:302 - Check plugin power
+2022-06-26 12:29:50,797 [INFO] PluginManage:352 - Loaded plugin power (category:power,tabindex:4)
+2022-06-26 12:29:50,797 [INFO] PluginManage:302 - Check plugin projectmanager
+2022-06-26 12:29:50,812 [INFO] PluginManage:352 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2022-06-26 12:29:50,812 [INFO] PluginManage:302 - Check plugin thirdparty
+2022-06-26 12:29:51,122 [WARN] IntegrityCheckThread:78 - waiting for thirdparty lock release [integrity check]
+2022-06-26 12:29:51,122 [INFO] PluginManage:352 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2022-06-26 12:29:51,122 [INFO] IntegrityCheckThread:80 - entering critical section [integrity check]
+2022-06-26 12:29:51,122 [INFO] PluginManage:302 - Check plugin tools
+2022-06-26 12:29:51,122 [INFO] ThirdPartyUpdaterWithRetryManager:66 - Updater plugin not ready yet. [1/15]
+2022-06-26 12:29:51,185 [INFO] PluginManage:352 - Loaded plugin tools (category:base,tabindex:7)
+2022-06-26 12:29:51,185 [INFO] PluginManage:302 - Check plugin tutovideos
+2022-06-26 12:29:51,483 [INFO] PluginManage:352 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2022-06-26 12:29:51,483 [INFO] PluginManage:302 - Check plugin updater
+2022-06-26 12:29:51,499 [INFO] PluginManage:352 - Loaded plugin updater (category:base,tabindex:12)
+2022-06-26 12:29:51,499 [INFO] PluginManage:275 - PluginManage : Loaded plugins [14]
+2022-06-26 12:29:51,859 [INFO] PinOutPanel:1465 - setPackage(No Configuration,No Configuration)
+2022-06-26 12:29:51,992 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:51,993 [INFO] PluginManager:213 - loadIPPluginJar : add adc
+2022-06-26 12:29:52,026 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,026 [INFO] PluginManager:213 - loadIPPluginJar : add aes
+2022-06-26 12:29:52,057 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,057 [INFO] PluginManager:213 - loadIPPluginJar : add can
+2022-06-26 12:29:52,075 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,075 [INFO] PluginManager:213 - loadIPPluginJar : add comp
+2022-06-26 12:29:52,105 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,105 [INFO] PluginManager:213 - loadIPPluginJar : add cryp
+2022-06-26 12:29:52,136 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,136 [INFO] PluginManager:213 - loadIPPluginJar : add dfsdm
+2022-06-26 12:29:52,152 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,152 [INFO] PluginManager:213 - loadIPPluginJar : add dma
+2022-06-26 12:29:52,183 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,183 [INFO] PluginManager:213 - loadIPPluginJar : add dma3
+2022-06-26 12:29:52,215 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,215 [INFO] PluginManager:213 - loadIPPluginJar : add fatfs
+2022-06-26 12:29:52,261 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,261 [INFO] PluginManager:213 - loadIPPluginJar : add fmc
+2022-06-26 12:29:52,277 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,277 [INFO] PluginManager:213 - loadIPPluginJar : add freertos
+2022-06-26 12:29:52,293 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,293 [INFO] PluginManager:213 - loadIPPluginJar : add genericplugin
+2022-06-26 12:29:52,387 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,387 [INFO] PluginManager:213 - loadIPPluginJar : add gfxmmu
+2022-06-26 12:29:52,528 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,528 [INFO] PluginManager:213 - loadIPPluginJar : add gic
+2022-06-26 12:29:52,544 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,544 [INFO] PluginManager:213 - loadIPPluginJar : add gpio
+2022-06-26 12:29:52,622 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,622 [INFO] PluginManager:213 - loadIPPluginJar : add gtzc
+2022-06-26 12:29:52,654 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,654 [INFO] PluginManager:213 - loadIPPluginJar : add hash
+2022-06-26 12:29:52,701 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,701 [INFO] PluginManager:213 - loadIPPluginJar : add i2c
+2022-06-26 12:29:52,748 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,748 [INFO] PluginManager:213 - loadIPPluginJar : add i2s
+2022-06-26 12:29:52,763 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,763 [INFO] PluginManager:213 - loadIPPluginJar : add ipddr
+2022-06-26 12:29:52,842 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,842 [INFO] PluginManager:213 - loadIPPluginJar : add linkedlist
+2022-06-26 12:29:52,877 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,877 [INFO] PluginManager:213 - loadIPPluginJar : add lorawan
+2022-06-26 12:29:52,905 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,905 [INFO] PluginManager:213 - loadIPPluginJar : add ltdc
+2022-06-26 12:29:52,920 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,920 [INFO] PluginManager:213 - loadIPPluginJar : add mdma
+2022-06-26 12:29:52,936 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,936 [INFO] PluginManager:213 - loadIPPluginJar : add nvic
+2022-06-26 12:29:52,952 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:52,952 [INFO] PluginManager:213 - loadIPPluginJar : add opamp
+2022-06-26 12:29:53,012 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,012 [INFO] PluginManager:213 - loadIPPluginJar : add openamp
+2022-06-26 12:29:53,043 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,043 [INFO] PluginManager:213 - loadIPPluginJar : add pdm2pcm
+2022-06-26 12:29:53,059 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,059 [INFO] PluginManager:213 - loadIPPluginJar : add plateformsettings
+2022-06-26 12:29:53,077 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,077 [INFO] PluginManager:213 - loadIPPluginJar : add quadspi
+2022-06-26 12:29:53,090 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,090 [INFO] PluginManager:213 - loadIPPluginJar : add resmgrutility
+2022-06-26 12:29:53,137 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,137 [INFO] PluginManager:213 - loadIPPluginJar : add sai
+2022-06-26 12:29:53,153 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,153 [INFO] PluginManager:213 - loadIPPluginJar : add spi
+2022-06-26 12:29:53,200 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,200 [INFO] PluginManager:213 - loadIPPluginJar : add stm32_wpan
+2022-06-26 12:29:53,216 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,216 [INFO] PluginManager:213 - loadIPPluginJar : add tim
+2022-06-26 12:29:53,263 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,263 [INFO] PluginManager:213 - loadIPPluginJar : add touchsensing
+2022-06-26 12:29:53,279 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,279 [INFO] PluginManager:213 - loadIPPluginJar : add tracer_emb
+2022-06-26 12:29:53,310 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,310 [INFO] PluginManager:213 - loadIPPluginJar : add ts
+2022-06-26 12:29:53,326 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,326 [INFO] PluginManager:213 - loadIPPluginJar : add tsc
+2022-06-26 12:29:53,341 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,341 [INFO] PluginManager:213 - loadIPPluginJar : add ucpd
+2022-06-26 12:29:53,378 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,378 [INFO] PluginManager:213 - loadIPPluginJar : add usart
+2022-06-26 12:29:53,404 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:29:53,404 [INFO] PluginManager:213 - loadIPPluginJar : add usbx
+2022-06-26 12:29:53,710 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:53,851 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:53,866 [INFO] DbMcusAds:47 - JSON generation date=Thu Sep 30 16:55:09 AEST 2021 (1632984909434)
+2022-06-26 12:29:53,866 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:53,945 [WARN] DetailPanel:320 - Failed to get advertising image, set to default
+2022-06-26 12:29:54,133 [INFO] ThirdPartyUpdaterWithRetryManager:66 - Updater plugin not ready yet. [2/15]
+2022-06-26 12:29:54,133 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:54,133 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:54,133 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:54,133 [WARN] DetailPanel:320 - Failed to get advertising image, set to default
+2022-06-26 12:29:54,133 [FATAL] Updater:297 - Updater called before beeing initialized
+2022-06-26 12:29:54,211 [INFO] Updater:1026 - Updater Version found : 6.5.0
+2022-06-26 12:29:54,243 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913
+2022-06-26 12:29:56,653 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:29:56,653 [INFO] MainUpdater:3414 - Updater definition file requires update
+2022-06-26 12:29:56,653 [INFO] MainUpdater:276 - Updater Check For Update Now.
+2022-06-26 12:29:56,653 [INFO] MicroXplorer:477 - Change Database Version : DB.6.0.50
+2022-06-26 12:29:57,137 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:29:57,137 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [1/15]
+2022-06-26 12:29:59,096 [INFO] ServerAccessManage:359 - Download File updaters.zip
+2022-06-26 12:29:59,285 [INFO] FileExtend:235 - Unzip File : updaters.zip
+2022-06-26 12:29:59,285 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:30:00,150 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:00,150 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [2/15]
+2022-06-26 12:30:01,208 [INFO] ServerAccessManage:359 - Download File PacksControlFlags.xml
+2022-06-26 12:30:02,617 [INFO] ServerAccessManage:359 - Download File cubemx.pidx
+2022-06-26 12:30:03,150 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:03,150 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [3/15]
+2022-06-26 12:30:04,092 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-DISPLAY.pdsc
+2022-06-26 12:30:06,156 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:06,156 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [4/15]
+2022-06-26 12:30:08,373 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-MEMS1.pdsc
+2022-06-26 12:30:09,168 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:09,168 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [5/15]
+2022-06-26 12:30:12,170 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:12,170 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [6/15]
+2022-06-26 12:30:15,171 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:15,171 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [7/15]
+2022-06-26 12:30:17,262 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:30:18,183 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:18,183 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [8/15]
+2022-06-26 12:30:19,764 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-NFC4.pdsc
+2022-06-26 12:30:21,184 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:21,184 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [9/15]
+2022-06-26 12:30:24,184 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:24,184 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [10/15]
+2022-06-26 12:30:27,184 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:27,184 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [11/15]
+2022-06-26 12:30:28,498 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-SUBG2.pdsc
+2022-06-26 12:30:30,185 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:30,185 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [12/15]
+2022-06-26 12:30:33,185 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:33,185 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [13/15]
+2022-06-26 12:30:35,775 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-TOUCHGFX.pdsc
+2022-06-26 12:30:36,199 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:36,199 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [14/15]
+2022-06-26 12:30:39,214 [WARN] MainUpdater:1180 - Updater busy. Cannot search thirdparties
+2022-06-26 12:30:39,214 [INFO] ThirdPartyUpdaterWithRetryManager:92 - Updater plugin is busy. [15/15]
+2022-06-26 12:30:39,214 [ERROR] IntegrityCheckThread:124 - Cannot retrieve database content from updater: error -1
+2022-06-26 12:30:39,214 [INFO] ThirdParty:925 - Integrity check success = false
+2022-06-26 12:30:39,214 [INFO] IntegrityCheckThread:94 - exiting critical section [integrity check]
+2022-06-26 12:30:39,214 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2022-06-26 12:30:42,027 [INFO] ServerAccessManage:359 - Download File STMicroelectronics.X-CUBE-AZRTOS-H7.pdsc
+2022-06-26 12:30:45,194 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.2.0
+2022-06-26 12:30:45,319 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.2.0
+2022-06-26 12:30:45,319 [INFO] CheckServerUpdateThread:115 - End of CheckServer Thread
+2022-06-26 12:30:45,413 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:30:45,413 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
+2022-06-26 12:30:45,570 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.4
+2022-06-26 12:30:45,601 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2022-06-26 12:30:45,618 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.19.1
+2022-06-26 12:30:45,680 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.2.1.0
+2022-06-26 12:30:45,680 [INFO] PopulateThirdPartyThread:60 - Ending populate Thread
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.1
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.2.0
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-06-26 12:30:45,696 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-06-26 12:30:45,696 [INFO] LoadServerUpdatesThread:362 - End of LoadServerUpdate Thread
+2022-06-26 12:30:46,018 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
+2022-06-26 12:30:46,031 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-06-26 12:30:46,031 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2022-06-26 12:30:46,203 [INFO] ServerAccessManage:359 - Download File mcusAds.json._tmp_
+2022-06-26 12:30:46,250 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:30:46,360 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:30:46,360 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.28
+2022-06-26 12:30:46,360 [INFO] ApiDb:656 - CubeFinder database generation date=2022-02-18 (1645170766)
+2022-06-26 12:30:46,360 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.0, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.1, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.0.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.1, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.0, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:30:46,454 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:30:49,738 [INFO] ApiDb:212 - Found 97 in-development CPN: [NUCLEO-C031C6, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L4R5QGI6STR, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q]
+2022-06-26 12:30:49,738 [INFO] DbMcus:201 - Found 3458 MCUs, 3458 are supported
+2022-06-26 12:30:49,738 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:30:49,738 [INFO] ApiDb:411 - User favorites MCUs=[]
+2022-06-26 12:30:49,738 [INFO] DbMcus:207 - Set 0 / 0 favorites MCUs
+2022-06-26 12:30:51,695 [INFO] LoadUrlFilesThread:173 - End of LoadServerUrlFiles without Thread
+2022-06-26 12:30:51,742 [INFO] DetailPanel:315 - Set advertising image to C:/Users/Angus McLennan/STM32Cube/Repository/\en.Prom_NBSTM32U50921.jpg
+2022-06-26 12:30:52,843 [INFO] ToolPreferences:109 - Table McuList, key=mcufinder_cubeide.mculist: column name not found=IO
+2022-06-26 12:30:52,843 [INFO] ToolPreferences:109 - Table McuList, key=mcufinder_cubeide.mculist: column name not found=Freq.
+2022-06-26 12:30:52,843 [INFO] MultiScanPanel:787 - Auto Refresh Data is needed due to updater interval setting
+2022-06-26 12:30:53,191 [INFO] ServerAccessManage:359 - Download File mcusAds.json._tmp_
+2022-06-26 12:30:53,333 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:30:56,002 [INFO] ServerAccessManage:359 - Download File cube-finder-db.zip
+2022-06-26 12:31:03,670 [INFO] FileExtend:235 - Unzip File : cube-finder-db.zip
+2022-06-26 12:31:03,670 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:04,498 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:06,917 [INFO] ServerAccessManage:359 - Download File crdb.zip
+2022-06-26 12:31:09,641 [INFO] FileExtend:235 - Unzip File : crdb.zip
+2022-06-26 12:31:09,641 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:09,790 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:12,670 [INFO] ServerAccessManage:359 - Download File tutoVideoDB.zip
+2022-06-26 12:31:12,779 [INFO] FileExtend:235 - Unzip File : tutoVideoDB.zip
+2022-06-26 12:31:12,779 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:12,920 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:12,920 [INFO] DbMcusAds:47 - JSON generation date=Thu Sep 30 16:55:09 AEST 2021 (1632984909230)
+2022-06-26 12:31:12,936 [INFO] ApiDb:432 - Save user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:31:12,936 [INFO] ApiDb:436 - User favorites MCUs=[]
+2022-06-26 12:31:12,936 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:31:12,971 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:12,971 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:12,971 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:12,971 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:15,230 [INFO] ApiDb:212 - Found 97 in-development CPN: [NUCLEO-C031C6, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L4R5QGI6STR, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q]
+2022-06-26 12:31:15,230 [INFO] DbMcus:201 - Found 3458 MCUs, 3458 are supported
+2022-06-26 12:31:15,230 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:31:15,230 [INFO] ApiDb:411 - User favorites MCUs=[]
+2022-06-26 12:31:15,230 [INFO] DbMcus:207 - Set 0 / 0 favorites MCUs
+2022-06-26 12:31:16,404 [INFO] LoadUrlFilesThread:173 - End of LoadServerUrlFiles without Thread
+2022-06-26 12:31:16,404 [INFO] MultiScanPanel:794 - Refresh data is successful
+2022-06-26 12:31:16,435 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:16,435 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:16,435 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:16,435 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:16,529 [INFO] DbBoardsSqlite:220 - include board P-NUCLEO-WB55-NUCLEO as a kit item of type 'Nucleo-64'
+2022-06-26 12:31:16,529 [INFO] DbBoardsSqlite:220 - include board P-NUCLEO-WB55-USBDONGLE as a kit item of type 'Nucleo USB Dongle'
+2022-06-26 12:31:16,529 [INFO] DbBoardsSqlite:220 - include board STEVAL-IDP005V1 as a kit item of type 'Evaluation Board'
+2022-06-26 12:31:16,529 [INFO] DbBoardsSqlite:220 - include board STEVAL-IDP005V2 as a kit item of type 'Evaluation Board'
+2022-06-26 12:31:16,545 [INFO] ApiDb:212 - Found 97 in-development CPN: [NUCLEO-C031C6, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L4R5QGI6STR, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q]
+2022-06-26 12:31:16,578 [INFO] BoardInfo:872 - No configuration file found for board B-G431B-ESC1
+2022-06-26 12:31:16,578 [INFO] DbBoards:144 - Board is not supported: B-G431B-ESC1
+2022-06-26 12:31:16,592 [INFO] BoardInfo:872 - No configuration file found for board I-NUCLEO-LRWAN1
+2022-06-26 12:31:16,592 [INFO] DbBoards:144 - Board is not supported: I-NUCLEO-LRWAN1
+2022-06-26 12:31:16,749 [INFO] BoardInfo:872 - No configuration file found for board P-NUCLEO-WB55
+2022-06-26 12:31:16,749 [INFO] DbBoards:144 - Kit is not supported: P-NUCLEO-WB55
+2022-06-26 12:31:16,765 [INFO] BoardInfo:872 - No configuration file found for board STEVAL-BFA001V1B
+2022-06-26 12:31:16,765 [INFO] DbBoards:144 - Kit is not supported: STEVAL-BFA001V1B
+2022-06-26 12:31:16,765 [INFO] BoardInfo:872 - No configuration file found for board STEVAL-BFA001V2B
+2022-06-26 12:31:16,765 [INFO] DbBoards:144 - Kit is not supported: STEVAL-BFA001V2B
+2022-06-26 12:31:16,953 [INFO] DbBoards:148 - Found 174 boards, 169 are supported
+2022-06-26 12:31:16,953 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-06-26 12:31:16,953 [INFO] ApiDb:411 - User favorites Boards=[]
+2022-06-26 12:31:16,953 [INFO] DbBoards:174 - Set 0 / 0 favorites Boards
+2022-06-26 12:31:17,890 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:17,890 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:17,890 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:17,890 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:19,506 [INFO] DbExamplesSqlite:367 - Ignored 24 examples not supported by CubeIDE
+2022-06-26 12:31:19,506 [INFO] DbExamplesSqlite:368 - Found 6144 examples active
+2022-06-26 12:31:19,506 [INFO] DbExamplesSqlite:369 - Found 64 examples obsolete
+2022-06-26 12:31:19,506 [INFO] DbExamplesSqlite:370 - Found 0 examples under development
+2022-06-26 12:31:19,506 [INFO] DbExamplesSqlite:371 - Found 96 examples not building
+2022-06-26 12:31:19,506 [INFO] DbExamples:124 - Found 6216 examples
+2022-06-26 12:31:19,521 [INFO] DbExamples:221 - Found 77 boards with related examples
+2022-06-26 12:31:19,521 [INFO] DbExamples:234 - Found 64 MCUs with related examples
+2022-06-26 12:31:19,552 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.examples.txt: 0 item(s)
+2022-06-26 12:31:19,552 [INFO] ApiDb:411 - User favorites Examples=[]
+2022-06-26 12:31:19,552 [INFO] DbExamples:249 - Set 0 / 0 favorites Examples
+2022-06-26 12:31:21,124 [INFO] ServerAccessManage:359 - Download File cube-finder-db.zip
+2022-06-26 12:31:32,215 [INFO] FileExtend:235 - Unzip File : cube-finder-db.zip
+2022-06-26 12:31:32,215 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:33,151 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:34,484 [INFO] ServerAccessManage:359 - Download File crdb.zip
+2022-06-26 12:31:36,497 [INFO] FileExtend:235 - Unzip File : crdb.zip
+2022-06-26 12:31:36,512 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:36,701 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:36,873 [INFO] ServerAccessManage:359 - Download File tutoVideoDB.zip
+2022-06-26 12:31:37,200 [INFO] FileExtend:235 - Unzip File : tutoVideoDB.zip
+2022-06-26 12:31:37,200 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:31:37,340 [INFO] LoadUrlFilesThread:146 - End of LoadUrlFiles Thread
+2022-06-26 12:31:37,340 [INFO] DbMcusAds:47 - JSON generation date=Thu Sep 30 16:55:09 AEST 2021 (1632984909230)
+2022-06-26 12:31:37,340 [INFO] ApiDb:432 - Save user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:31:37,340 [INFO] ApiDb:436 - User favorites MCUs=[]
+2022-06-26 12:31:37,340 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:31:37,372 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:37,372 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:37,372 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:37,372 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:39,756 [INFO] ApiDb:212 - Found 97 in-development CPN: [NUCLEO-C031C6, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L4R5QGI6STR, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q]
+2022-06-26 12:31:39,756 [INFO] DbMcus:201 - Found 3458 MCUs, 3458 are supported
+2022-06-26 12:31:39,756 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:31:39,756 [INFO] ApiDb:411 - User favorites MCUs=[]
+2022-06-26 12:31:39,756 [INFO] DbMcus:207 - Set 0 / 0 favorites MCUs
+2022-06-26 12:31:40,712 [INFO] ApiDb:432 - Save user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-06-26 12:31:40,712 [INFO] ApiDb:436 - User favorites Boards=[]
+2022-06-26 12:31:40,712 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:31:40,744 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:40,744 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:40,744 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:40,744 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:40,806 [INFO] DbBoardsSqlite:220 - include board P-NUCLEO-WB55-NUCLEO as a kit item of type 'Nucleo-64'
+2022-06-26 12:31:40,806 [INFO] DbBoardsSqlite:220 - include board P-NUCLEO-WB55-USBDONGLE as a kit item of type 'Nucleo USB Dongle'
+2022-06-26 12:31:40,806 [INFO] DbBoardsSqlite:220 - include board STEVAL-IDP005V1 as a kit item of type 'Evaluation Board'
+2022-06-26 12:31:40,806 [INFO] DbBoardsSqlite:220 - include board STEVAL-IDP005V2 as a kit item of type 'Evaluation Board'
+2022-06-26 12:31:40,822 [INFO] ApiDb:212 - Found 97 in-development CPN: [NUCLEO-C031C6, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L4R5QGI6STR, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q]
+2022-06-26 12:31:40,822 [INFO] BoardInfo:872 - No configuration file found for board B-G431B-ESC1
+2022-06-26 12:31:40,822 [INFO] DbBoards:144 - Board is not supported: B-G431B-ESC1
+2022-06-26 12:31:40,838 [INFO] BoardInfo:872 - No configuration file found for board I-NUCLEO-LRWAN1
+2022-06-26 12:31:40,838 [INFO] DbBoards:144 - Board is not supported: I-NUCLEO-LRWAN1
+2022-06-26 12:31:40,948 [INFO] BoardInfo:872 - No configuration file found for board P-NUCLEO-WB55
+2022-06-26 12:31:40,948 [INFO] DbBoards:144 - Kit is not supported: P-NUCLEO-WB55
+2022-06-26 12:31:40,963 [INFO] BoardInfo:872 - No configuration file found for board STEVAL-BFA001V1B
+2022-06-26 12:31:40,963 [INFO] DbBoards:144 - Kit is not supported: STEVAL-BFA001V1B
+2022-06-26 12:31:40,963 [INFO] BoardInfo:872 - No configuration file found for board STEVAL-BFA001V2B
+2022-06-26 12:31:40,963 [INFO] DbBoards:144 - Kit is not supported: STEVAL-BFA001V2B
+2022-06-26 12:31:41,149 [INFO] DbBoards:148 - Found 174 boards, 169 are supported
+2022-06-26 12:31:41,165 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-06-26 12:31:41,165 [INFO] ApiDb:411 - User favorites Boards=[]
+2022-06-26 12:31:41,165 [INFO] DbBoards:174 - Set 0 / 0 favorites Boards
+2022-06-26 12:31:41,934 [INFO] ApiDb:432 - Save user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.examples.txt: 0 item(s)
+2022-06-26 12:31:41,934 [INFO] ApiDb:436 - User favorites Examples=[]
+2022-06-26 12:31:41,949 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:31:41,995 [INFO] ApiDb:654 - CubeFinder database Data Model version=2.1
+2022-06-26 12:31:41,995 [INFO] ApiDb:655 - CubeFinder database Configuration version=3.0.30
+2022-06-26 12:31:41,995 [INFO] ApiDb:656 - CubeFinder database generation date=2022-04-28 (1651152914)
+2022-06-26 12:31:41,995 [INFO] ApiDb:657 - CubeFinder database FW Pack versions=[STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.0, STM32Cube_FW_F7_V1.16.2, STM32Cube_FW_G0_V1.5.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H7_V1.10.0, STM32Cube_FW_L5_V1.4.0, STM32Cube_FW_U5_V1.1.0, STM32Cube_FW_WB_V1.13.3, STM32Cube_FW_WL_V1.2.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.0.0, X-CUBE-AZRTOS-F7_V1.0.0, X-CUBE-AZRTOS-G0_V1.0.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.3, X-CUBE-BLE2_V3.2.2, X-CUBE-EEPRMA1_V3.1.1, X-CUBE-GNSS1_V5.2.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-NFC4_V2.0.3, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V3.1.0, X-CUBE-SUBG2_V4.2.0]
+2022-06-26 12:31:43,230 [INFO] DbExamplesSqlite:367 - Ignored 24 examples not supported by CubeIDE
+2022-06-26 12:31:43,230 [INFO] DbExamplesSqlite:368 - Found 6144 examples active
+2022-06-26 12:31:43,230 [INFO] DbExamplesSqlite:369 - Found 64 examples obsolete
+2022-06-26 12:31:43,230 [INFO] DbExamplesSqlite:370 - Found 0 examples under development
+2022-06-26 12:31:43,230 [INFO] DbExamplesSqlite:371 - Found 96 examples not building
+2022-06-26 12:31:43,230 [INFO] DbExamples:124 - Found 6216 examples
+2022-06-26 12:31:43,246 [INFO] DbExamples:221 - Found 77 boards with related examples
+2022-06-26 12:31:43,246 [INFO] DbExamples:234 - Found 64 MCUs with related examples
+2022-06-26 12:31:43,262 [INFO] ApiDb:407 - Load user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.examples.txt: 0 item(s)
+2022-06-26 12:31:43,262 [INFO] ApiDb:411 - User favorites Examples=[]
+2022-06-26 12:31:43,262 [INFO] DbExamples:249 - Set 0 / 0 favorites Examples
+2022-06-26 12:31:44,089 [INFO] LoadUrlFilesThread:173 - End of LoadServerUrlFiles without Thread
+2022-06-26 12:31:44,089 [INFO] TargetSelectorAdapter:228 - Refresh data is successful
+2022-06-26 12:31:44,183 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
+2022-06-26 12:31:44,183 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-06-26 12:31:44,183 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2022-06-26 12:31:45,246 [INFO] LoadUrlFilesThread:173 - End of LoadServerUrlFiles without Thread
+2022-06-26 12:31:45,246 [INFO] DetailPanel:315 - Set advertising image to C:/Users/Angus McLennan/STM32Cube/Repository/\en.Prom_NBSTM32U50921.jpg
+2022-06-26 12:31:45,826 [INFO] ToolPreferences:109 - Table McuList, key=mcufinder_cubeide.mculist: column name not found=IO
+2022-06-26 12:31:45,826 [INFO] ToolPreferences:109 - Table McuList, key=mcufinder_cubeide.mculist: column name not found=Freq.
+2022-06-26 12:34:41,897 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:34:41,898 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:34:41,946 [INFO] MicroXplorer:447 - Change Database Path : 
+2022-06-26 12:34:41,946 [INFO] MicroXplorer:477 - Change Database Version : DB.6.0.50
+2022-06-26 12:34:41,947 [WARN] ThirdParty:823 - waiting for thirdparty lock release [close project]
+2022-06-26 12:34:41,947 [INFO] ThirdParty:825 - entering critical section [close project]
+2022-06-26 12:34:41,948 [INFO] ThirdParty:835 - exiting critical section [close project]
+2022-06-26 12:34:41,957 [INFO] PinOutPanel:1465 - setPackage(No Configuration,No Configuration)
+2022-06-26 12:34:41,964 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 442234976 Bytes (534773760)
+2022-06-26 12:34:41,966 [INFO] MicroXplorer:447 - Change Database Path : 
+2022-06-26 12:34:41,966 [INFO] MicroXplorer:477 - Change Database Version : DB.6.0.50
+2022-06-26 12:34:41,966 [INFO] OpenFileManager:303 - Change cursor
+2022-06-26 12:34:41,988 [WARN] IntegrityCheckThread:78 - waiting for thirdparty lock release [integrity check]
+2022-06-26 12:34:41,989 [INFO] IntegrityCheckThread:80 - entering critical section [integrity check]
+2022-06-26 12:34:42,270 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.2.0
+2022-06-26 12:34:42,618 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.19.1
+2022-06-26 12:34:42,650 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.3
+2022-06-26 12:34:42,663 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.4
+2022-06-26 12:34:42,704 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.19.0
+2022-06-26 12:34:42,729 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.0
+2022-06-26 12:34:42,744 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.2.2.0
+2022-06-26 12:34:42,814 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.2.1.0
+2022-06-26 12:34:42,852 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2022-06-26 12:34:42,874 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2022-06-26 12:34:42,921 [WARN] PackLoader:238 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.1.2
+2022-06-26 12:34:42,965 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.1.0.0
+2022-06-26 12:34:42,990 [WARN] PackLoader:238 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2022-06-26 12:34:43,012 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.1.1
+2022-06-26 12:34:43,041 [WARN] PackLoader:238 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.0.0
+2022-06-26 12:34:43,055 [INFO] ThirdParty:925 - Integrity check success = true
+2022-06-26 12:34:43,055 [INFO] IntegrityCheckThread:94 - exiting critical section [integrity check]
+2022-06-26 12:34:43,055 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2022-06-26 12:34:43,127 [INFO] Mcu:1893 - Initializing MCU STM32F405RGTx STM32F405RGTx 
+2022-06-26 12:34:43,128 [INFO] Mcu:1906 - No CPN specified => set CPN to STM32F405RGT6
+2022-06-26 12:34:48,227 [INFO] Context:599 - Trying to add GPIOservice into a context  which must be forbidden
+2022-06-26 12:34:49,697 [INFO] ImportTextPane:183 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2022-06-26 12:34:49,697 [INFO] ImportTextPane:183 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2022-06-26 12:34:49,697 [INFO] ImportTextPane:183 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,010 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2022-06-26 12:34:50,030 [WARN] ApiManager:304 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.0: no header file found
+2022-06-26 12:34:50,308 [WARN] ApiManager:304 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.2.0: no header file found
+2022-06-26 12:34:50,308 [WARN] ApiManager:304 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.2.0: no header file found
+2022-06-26 12:34:50,308 [WARN] ApiManager:304 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.2.0: no header file found
+2022-06-26 12:34:50,340 [WARN] ApiManager:304 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.3: no header file found
+2022-06-26 12:34:50,340 [INFO] RtosManager:484 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2022-06-26 12:34:50,340 [INFO] RtosManager:484 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2022-06-26 12:34:50,340 [INFO] RtosManager:484 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2022-06-26 12:34:50,340 [INFO] RtosManager:484 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2022-06-26 12:34:50,356 [WARN] ModelIntegratedComponent:181 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-06-26 12:34:50,371 [WARN] ApiManager:304 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.4: no header file found
+2022-06-26 12:34:50,402 [INFO] ThirdPartyModel:282 - Start build external matchings
+2022-06-26 12:34:50,624 [INFO] ThirdPartyModel:295 - End build external matchings
+2022-06-26 12:34:51,430 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 451818760 Bytes (534773760)
+2022-06-26 12:34:51,456 [WARN] ThirdParty:785 - waiting for thirdparty lock release [change project]
+2022-06-26 12:34:51,456 [INFO] ThirdParty:787 - entering critical section [change project]
+2022-06-26 12:34:51,456 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-06-26 12:34:51,456 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-06-26 12:34:51,456 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-06-26 12:34:51,456 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.2.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-06-26 12:34:51,457 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.1
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-06-26 12:34:51,458 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.0.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-06-26 12:34:51,459 [INFO] ThirdParty:793 - exiting critical section [change project]
+2022-06-26 12:34:52,165 [INFO] PinOutPanel:1465 - setPackage(No Configuration,No Configuration)
+2022-06-26 12:34:52,167 [INFO] PinOutPanel:1465 - setPackage(STM32F405RGTx,LQFP64)
+2022-06-26 12:34:53,319 [INFO] UtilMem:74 - Before build in PCC Used Memory: 445771560 Bytes (534773760)
+2022-06-26 12:34:55,039 [INFO] UtilMem:74 - After build in PCC Used Memory: 470341056 Bytes (534773760)
+2022-06-26 12:34:55,143 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,143 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,143 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,144 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,144 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,144 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,145 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,145 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,145 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,145 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,146 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,146 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,146 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,147 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,147 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,150 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,150 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,151 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,151 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,152 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,152 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,153 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,153 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,154 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,154 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,155 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,155 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,156 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,156 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,157 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,157 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,158 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,158 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,159 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,159 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,160 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,161 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,161 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,162 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,162 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,163 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,164 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,166 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,167 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,169 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,170 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,172 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,172 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,173 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,174 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,175 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,176 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,177 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,180 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:34:55,303 [INFO] ApiDbMcu:488 - Load IP Config File for PDM2PCM
+2022-06-26 12:34:55,662 [INFO] OpenFileManager:323 - Restore cursor
+2022-06-26 12:34:57,157 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 474969272 Bytes (534773760)
+2022-06-26 12:34:58,953 [INFO] ServerAccessManage:359 - Download File stm32cube_fw_f4_v1270.zip
+2022-06-26 12:38:24,062 [INFO] AnalyticsPlugin:353 - Accepted License(s) without tracking enabled: [FW.F4.1.27.0]
+2022-06-26 12:38:24,062 [INFO] FileExtend:235 - Unzip File : stm32cube_fw_f4_v1270.zip
+2022-06-26 12:38:24,062 [INFO] FileExtend:250 - Standard Zip Deflate
+2022-06-26 12:39:51,404 [INFO] LoadServerPackagesThread:185 - End of LoadServerPackages Thread
+2022-06-26 12:39:51,687 [INFO] ThirdPartyModel:282 - Start build external matchings
+2022-06-26 12:39:51,720 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 495433448 Bytes (1073741824)
+2022-06-26 12:39:52,021 [INFO] ThirdPartyModel:295 - End build external matchings
+2022-06-26 12:39:52,032 [INFO] CheckServerUpdateThread:115 - End of CheckServer Thread
+2022-06-26 12:39:52,908 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:39:52,908 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:39:52,908 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:39:52,908 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:39:53,724 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:39:54,576 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:39:54,733 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:39:55,109 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:39:55,127 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:39:55,376 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:39:55,407 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:39:55,752 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:39:55,768 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:39:55,941 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:39:55,956 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:39:56,269 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:39:56,410 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:39:56,756 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:39:56,771 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:39:57,195 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:39:59,011 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 515mS.
+2022-06-26 12:39:59,042 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:39:59,735 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:39:59,763 [INFO] ApiDbMcu:488 - Load IP Config File for FATFS
+2022-06-26 12:39:59,795 [INFO] ApiDbMcu:488 - Load IP Config File for FREERTOS
+2022-06-26 12:39:59,842 [INFO] ApiDbMcu:488 - Load IP Config File for LIBJPEG
+2022-06-26 12:40:00,046 [INFO] ApiDbMcu:488 - Load IP Config File for MBEDTLS
+2022-06-26 12:40:00,093 [INFO] ApiDbMcu:488 - Load IP Config File for USB_DEVICE
+2022-06-26 12:40:00,108 [INFO] ApiDbMcu:488 - Load IP Config File for USB_HOST
+2022-06-26 12:40:08,619 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 9577mS.
+2022-06-26 12:40:08,619 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:40:08,619 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:40:09,466 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
+2022-06-26 12:40:09,466 [INFO] ApiDb:432 - Save user favorites file C:\Users\Angus McLennan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-06-26 12:40:09,466 [INFO] ApiDb:436 - User favorites MCUs=[]
+2022-06-26 12:40:55,372 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 481144512 Bytes (650117120)
+2022-06-26 12:40:57,937 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 226807192 Bytes (650117120)
+2022-06-26 12:41:00,906 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 391959368 Bytes (650117120)
+2022-06-26 12:41:01,518 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:41:01,518 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:41:01,518 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:41:01,518 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:41:01,518 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:41:01,894 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:41:02,090 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:41:02,121 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:41:02,325 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:41:02,367 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:41:02,560 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:41:02,576 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:41:02,827 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:41:02,858 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:41:03,120 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:41:03,136 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:41:03,277 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:41:03,309 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:41:03,497 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:41:03,544 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:41:03,653 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:41:03,669 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:41:03,857 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:41:05,278 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 341mS.
+2022-06-26 12:41:05,294 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:41:05,607 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:41:08,636 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 3342mS.
+2022-06-26 12:41:08,636 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:41:08,636 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:41:50,765 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 537471760 Bytes (650117120)
+2022-06-26 12:41:50,826 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 558965520 Bytes (650117120)
+2022-06-26 12:41:52,200 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 263906208 Bytes (650117120)
+2022-06-26 12:41:52,442 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:41:52,442 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:41:52,442 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:41:52,442 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:41:52,442 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:41:52,645 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:41:52,771 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:41:52,818 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:41:52,975 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:41:52,997 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:41:53,185 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:41:53,201 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:41:53,357 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:41:53,373 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:41:53,530 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:41:53,530 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:41:53,624 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:41:53,640 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:41:53,781 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:41:53,812 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:41:53,937 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:41:53,953 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:41:54,091 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:41:55,247 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 325mS.
+2022-06-26 12:41:55,247 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:41:55,906 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:41:57,997 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2750mS.
+2022-06-26 12:41:57,998 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:41:57,998 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:47:09,765 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x142,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 12:47:13,624 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 385571720 Bytes (740294656)
+2022-06-26 12:47:13,702 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 405523040 Bytes (740294656)
+2022-06-26 12:47:15,606 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 441696080 Bytes (740294656)
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:47:16,060 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:47:16,060 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:47:16,547 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:47:16,766 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:47:16,798 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:47:16,955 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:47:17,142 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:47:17,393 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:47:17,399 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:47:17,550 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:47:17,565 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:47:17,769 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:47:17,785 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:47:17,911 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:47:17,926 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:47:18,169 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:47:18,231 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:47:18,467 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:47:18,482 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:47:18,733 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:47:20,000 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 397mS.
+2022-06-26 12:47:20,004 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:47:20,324 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:47:22,923 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2919mS.
+2022-06-26 12:47:22,923 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:47:22,923 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:47:53,702 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 331155416 Bytes (740294656)
+2022-06-26 12:47:53,796 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 350518712 Bytes (740294656)
+2022-06-26 12:47:56,043 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 384650632 Bytes (740294656)
+2022-06-26 12:47:56,357 [INFO] ProjectBuilder:2238 - IP not ready for code generation: Clock
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:47:59,451 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:47:59,466 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:47:59,733 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:47:59,858 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:47:59,890 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:48:00,136 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:48:00,277 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 12:48:00,324 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:48:00,575 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:48:00,591 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:48:00,747 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:48:00,779 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:48:00,967 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:48:00,974 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:48:01,105 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:48:01,120 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:48:01,309 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:48:01,450 [WARN] IPConfigManager:3312 - IP not found : USB_OTG
+2022-06-26 12:48:01,450 [WARN] CodeGenerator:3483 - IP not found : null
+2022-06-26 12:48:01,475 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:48:01,669 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:48:01,675 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:48:01,841 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:48:02,810 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 313mS.
+2022-06-26 12:48:02,826 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:48:03,122 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:48:05,557 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2731mS.
+2022-06-26 12:48:05,557 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:48:05,557 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:48:11,876 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JApplet (sun.awt.windows.WEmbeddedFrame and javax.swing.JApplet are in module java.desktop of loader 'bootstrap')
+2022-06-26 12:48:11,893 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:417)
+2022-06-26 12:48:11,893 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:335)
+2022-06-26 12:48:11,893 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:418)
+2022-06-26 12:48:11,893 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:269)
+2022-06-26 12:48:11,893 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:597)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4090)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2022-06-26 12:48:11,908 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2022-06-26 12:48:11,924 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2022-06-26 12:48:11,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:48:11,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:48:11,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2022-06-26 12:48:11,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2022-06-26 12:48:11,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2022-06-26 12:48:11,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2022-06-26 12:48:11,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2022-06-26 12:48:11,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2022-06-26 12:48:11,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2022-06-26 12:49:23,008 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 701173528 Bytes (1070596096)
+2022-06-26 12:49:23,290 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 478907480 Bytes (1070596096)
+2022-06-26 12:49:24,815 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 625618344 Bytes (1070596096)
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:49:25,262 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:49:25,262 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:49:25,741 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:49:25,882 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:49:25,903 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:49:26,012 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:49:26,102 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 12:49:26,127 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:49:26,232 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:49:26,248 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:49:26,328 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:49:26,342 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:49:26,452 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:49:26,467 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:49:26,530 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:49:26,546 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:49:26,656 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:49:26,656 [WARN] IPConfigManager:3312 - IP not found : USB_OTG
+2022-06-26 12:49:26,656 [WARN] CodeGenerator:3483 - IP not found : null
+2022-06-26 12:49:26,671 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:49:26,781 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:49:26,797 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:49:26,938 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:49:27,890 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 314mS.
+2022-06-26 12:49:27,890 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:49:28,153 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:49:29,940 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2050mS.
+2022-06-26 12:49:29,940 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:49:29,940 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:49:33,142 [WARN] IP:2108 - VDD_VALUE not found: check if there is a RefParameter without a condition.
+2022-06-26 12:50:06,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JApplet (sun.awt.windows.WEmbeddedFrame and javax.swing.JApplet are in module java.desktop of loader 'bootstrap')
+2022-06-26 12:50:06,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:417)
+2022-06-26 12:50:06,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:335)
+2022-06-26 12:50:06,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:418)
+2022-06-26 12:50:06,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:269)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:597)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4090)
+2022-06-26 12:50:06,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2022-06-26 12:50:06,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:50:06,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2022-06-26 12:50:06,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2022-06-26 12:50:06,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2022-06-26 12:50:06,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2022-06-26 12:50:06,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:50:06,894 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2022-06-26 12:50:06,894 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2022-06-26 12:50:06,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2022-06-26 12:50:06,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:50:06,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:50:06,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2022-06-26 12:50:06,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2022-06-26 12:50:06,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2022-06-26 12:50:06,926 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2022-06-26 12:50:06,926 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2022-06-26 12:50:06,926 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2022-06-26 12:50:06,926 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2022-06-26 12:50:17,794 [FATAL] LogicalParser:306 - Exception caught
+java.util.ConcurrentModificationException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:719)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:741)
+	at com.st.microxplorer.mcu.IP.getParameterValue(IP.java:3196)
+	at com.st.microxplorer.mcu.RefParameterSemaphore.getValue(RefParameterSemaphore.java:63)
+	at com.st.microxplorer.util.MXSemaphore.getValue(MXSemaphore.java:80)
+	at com.st.microxplorer.util.LogicalParser.getUpdatedSem(LogicalParser.java:219)
+	at com.st.microxplorer.util.LogicalParser.evaluate(LogicalParser.java:402)
+	at com.st.microxplorer.util.LogicalParser.checkCondition(LogicalParser.java:304)
+	at com.st.microxplorer.mcu.RefParameter.isInUse(RefParameter.java:350)
+	at com.st.microxplorer.mcu.IP.getParameter(IP.java:4589)
+	at com.st.microxplorer.mcu.IP.getRefParameters(IP.java:2009)
+	at com.st.microxplorer.mcu.IP.getAllRequiredRefParameters(IP.java:3981)
+	at com.st.microxplorer.mcu.RCCService.getAllRequiredRefParameters(RCCService.java:289)
+	at com.st.microxplorer.mcu.IP.isAllParamsConfigured(IP.java:2848)
+	at com.st.microxplorer.plugins.ipmanager.generictreatment.model.ParamManager.setConfigurationState(ParamManager.java:690)
+	at com.st.microxplorer.plugins.ipmanager.generictreatment.gui.MainPanel.updateTabIcons(MainPanel.java:551)
+	at com.st.microxplorer.plugins.ipmanager.generictreatment.gui.MainPanel.updateTabsIcons(MainPanel.java:427)
+	at com.st.microxplorer.plugins.ipmanager.generictreatment.gui.MainPanel.rebuildSharedComponentsTabs(MainPanel.java:492)
+	at com.st.microxplorer.plugins.ipmanager.generictreatment.gui.MainPanel.updateSharedTabs(MainPanel.java:479)
+	at com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.updateIpPanel(BlockDiagram.java:454)
+	at com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.getIPConfigPanel(BlockDiagram.java:585)
+	at com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.getIPConfigPanel(BlockDiagram.java:463)
+	at com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.propertyChange(BlockDiagram.java:1321)
+	at java.desktop/java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:341)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:333)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:266)
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:50)
+	at com.st.microxplorer.mxsystem.MxSystem.MxFirePropertyChange(MxSystem.java:205)
+	at com.st.microxplorer.plugins.ip.usart.Usart.propertyChange(Usart.java:89)
+	at java.desktop/java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:341)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:333)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:266)
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:50)
+	at com.st.microxplorer.mxsystem.MxSystem.MxFirePropertyChange(MxSystem.java:205)
+	at com.st.microxplorer.plugins.clock.gui.MultiplexerUI$2.doInBackground(MultiplexerUI.java:496)
+	at com.st.microxplorer.plugins.clock.gui.MultiplexerUI$2.doInBackground(MultiplexerUI.java:493)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-06-26 12:50:17,846 [WARN] IP:2108 - GPIO_Label not found: check if there is a RefParameter without a condition.
+2022-06-26 12:51:26,991 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 637084792 Bytes (1071644672)
+2022-06-26 12:51:27,199 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 525043512 Bytes (1071644672)
+2022-06-26 12:51:29,260 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 626158648 Bytes (1071644672)
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 12:51:29,526 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 12:51:29,526 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 12:51:29,761 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 12:51:29,902 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 12:51:29,917 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 12:51:30,043 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 12:51:30,122 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 12:51:30,137 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 12:51:30,263 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 12:51:30,279 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 12:51:30,341 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 12:51:30,362 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 12:51:30,467 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 12:51:30,467 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 12:51:30,592 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 12:51:30,608 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 12:51:30,781 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 12:51:30,828 [WARN] IPConfigManager:3312 - IP not found : USB_OTG
+2022-06-26 12:51:30,828 [WARN] CodeGenerator:3483 - IP not found : null
+2022-06-26 12:51:30,843 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 12:51:30,985 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 12:51:30,985 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 12:51:31,212 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 12:51:32,121 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 297mS.
+2022-06-26 12:51:32,121 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 12:51:32,404 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 12:51:34,207 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2086mS.
+2022-06-26 12:51:34,207 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:51:34,270 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 12:53:57,184 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,461x169,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 12:54:18,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JApplet (sun.awt.windows.WEmbeddedFrame and javax.swing.JApplet are in module java.desktop of loader 'bootstrap')
+2022-06-26 12:54:18,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:417)
+2022-06-26 12:54:18,325 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:335)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:418)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:269)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:597)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4090)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2022-06-26 12:54:18,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:54:18,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2022-06-26 12:54:18,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:54:18,385 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:54:18,385 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2022-06-26 12:54:18,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2022-06-26 12:54:33,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JApplet (sun.awt.windows.WEmbeddedFrame and javax.swing.JApplet are in module java.desktop of loader 'bootstrap')
+2022-06-26 12:54:33,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:417)
+2022-06-26 12:54:33,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:335)
+2022-06-26 12:54:33,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:418)
+2022-06-26 12:54:33,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:269)
+2022-06-26 12:54:33,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+2022-06-26 12:54:33,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:597)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4090)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2022-06-26 12:54:33,780 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2022-06-26 12:54:33,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2022-06-26 12:54:33,811 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:54:33,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2022-06-26 12:54:33,827 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2022-06-26 12:54:33,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2022-06-26 12:55:02,559 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:55:02,559 [INFO] MainUpdater:2729 - connection check result : 10
+2022-06-26 12:55:02,565 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 454041136 Bytes (1072693248)
+2022-06-26 12:55:02,575 [INFO] MicroXplorer:447 - Change Database Path : 
+2022-06-26 12:55:02,575 [INFO] MicroXplorer:477 - Change Database Version : DB.6.0.50
+2022-06-26 12:55:02,575 [INFO] OpenFileManager:303 - Change cursor
+2022-06-26 12:55:02,591 [INFO] RulesReader:57 - Compatibility file has been processed (281 Rules)
+2022-06-26 12:55:02,591 [INFO] Mcu:1893 - Initializing MCU STM32F405RGTx STM32F405RGTx STM32F405RGT6
+2022-06-26 12:55:04,215 [INFO] Context:599 - Trying to add GPIOservice into a context  which must be forbidden
+2022-06-26 12:55:04,685 [INFO] ThirdPartyModel:282 - Start build external matchings
+2022-06-26 12:55:04,795 [INFO] ThirdPartyModel:295 - End build external matchings
+2022-06-26 12:55:04,795 [INFO] ImportTextPane:183 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (12000000)
+2022-06-26 12:55:05,089 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 820364704 Bytes (1072693248)
+2022-06-26 12:55:05,089 [WARN] ThirdParty:785 - waiting for thirdparty lock release [change project]
+2022-06-26 12:55:05,089 [INFO] ThirdParty:787 - entering critical section [change project]
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.2.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.1
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.19.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.0.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:977 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-06-26 12:55:05,089 [INFO] ThirdParty:793 - exiting critical section [change project]
+2022-06-26 12:55:05,418 [INFO] PinOutPanel:1465 - setPackage(No Configuration,No Configuration)
+2022-06-26 12:55:05,418 [INFO] PinOutPanel:1465 - setPackage(STM32F405RGTx,LQFP64)
+2022-06-26 12:55:05,826 [INFO] UtilMem:74 - Before build in PCC Used Memory: 343683592 Bytes (1072693248)
+2022-06-26 12:55:06,207 [INFO] UtilMem:74 - After build in PCC Used Memory: 384055816 Bytes (1072693248)
+2022-06-26 12:55:06,222 [WARN] IpParametersView:144 - Warning: This peripheral hasn't parameters
+2022-06-26 12:55:06,222 [WARN] MainPanel:249 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,269 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,272 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,285 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,285 [INFO] IPUIPlugin:75 - create IPUIPlugin
+2022-06-26 12:55:06,285 [INFO] ApiDbMcu:488 - Load IP Config File for PDM2PCM
+2022-06-26 12:55:06,363 [INFO] OpenFileManager:323 - Restore cursor
+2022-06-26 12:55:06,372 [INFO] ApiDb:567 - Connected to CubeFinder SQLite database (C:\Users\Angus McLennan\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2022-06-26 12:55:17,909 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x161,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 12:55:19,401 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 13:00:07,394 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 13:00:08,514 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 13:00:27,295 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 378094536 Bytes (1072693248)
+2022-06-26 13:00:27,358 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 398312800 Bytes (1072693248)
+2022-06-26 13:00:28,876 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 441009096 Bytes (1072693248)
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:00:29,097 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 13:00:29,097 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 13:00:29,300 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 13:00:29,379 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 13:00:29,395 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 13:00:29,504 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 13:00:29,560 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 13:00:29,583 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 13:00:29,708 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 13:00:29,708 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 13:00:29,787 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 13:00:29,818 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 13:00:29,961 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 13:00:29,961 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 13:00:30,011 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 13:00:30,042 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 13:00:30,162 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 13:00:30,183 [WARN] IPConfigManager:3312 - IP not found : USB_OTG
+2022-06-26 13:00:30,183 [WARN] CodeGenerator:3483 - IP not found : null
+2022-06-26 13:00:30,199 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 13:00:30,293 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 13:00:30,293 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 13:00:30,403 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 13:00:31,277 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 267mS.
+2022-06-26 13:00:31,277 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 13:00:31,544 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 13:00:31,544 [INFO] ApiDbMcu:488 - Load IP Config File for FATFS
+2022-06-26 13:00:31,544 [INFO] ApiDbMcu:488 - Load IP Config File for FREERTOS
+2022-06-26 13:00:31,544 [INFO] ApiDbMcu:488 - Load IP Config File for LIBJPEG
+2022-06-26 13:00:31,544 [INFO] ApiDbMcu:488 - Load IP Config File for MBEDTLS
+2022-06-26 13:00:31,559 [INFO] ApiDbMcu:488 - Load IP Config File for USB_DEVICE
+2022-06-26 13:00:31,564 [INFO] ApiDbMcu:488 - Load IP Config File for USB_HOST
+2022-06-26 13:00:32,638 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1361mS.
+2022-06-26 13:00:32,638 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:00:32,638 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:01:29,690 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 13:01:38,542 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-26 13:01:46,043 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 922785320 Bytes (1072693248)
+2022-06-26 13:01:46,137 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 305134648 Bytes (1072693248)
+2022-06-26 13:01:47,671 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 339736648 Bytes (1072693248)
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:01:47,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 13:01:47,938 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 13:01:48,246 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 13:01:48,333 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 13:01:48,341 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 13:01:48,435 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 13:01:48,497 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 13:01:48,513 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 13:01:48,607 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 13:01:48,623 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 13:01:48,670 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 13:01:48,701 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 13:01:48,843 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 13:01:48,843 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 13:01:48,952 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 13:01:48,968 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 13:01:49,073 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 13:01:49,089 [WARN] IPConfigManager:3312 - IP not found : USB_OTG
+2022-06-26 13:01:49,105 [WARN] CodeGenerator:3483 - IP not found : null
+2022-06-26 13:01:49,105 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 13:01:49,214 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 13:01:49,214 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 13:01:49,309 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 13:01:50,124 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 344mS.
+2022-06-26 13:01:50,124 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 13:01:50,436 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 13:01:51,426 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1302mS.
+2022-06-26 13:01:51,426 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:01:51,426 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:06:32,981 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 303084848 Bytes (1072693248)
+2022-06-26 13:06:33,077 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 302818608 Bytes (1072693248)
+2022-06-26 13:06:35,504 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 335378200 Bytes (1072693248)
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_DEVICE
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:06:35,739 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 13:06:35,739 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 13:06:36,043 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 13:06:36,169 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 13:06:36,216 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 13:06:36,326 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 13:06:36,372 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 13:06:36,401 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp_save
+2022-06-26 13:06:36,501 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp
+2022-06-26 13:06:36,514 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp_save
+2022-06-26 13:06:36,576 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp
+2022-06-26 13:06:36,592 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp_save
+2022-06-26 13:06:36,686 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp
+2022-06-26 13:06:36,702 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp_save
+2022-06-26 13:06:36,812 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp
+2022-06-26 13:06:36,968 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:06:36,995 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:06:37,011 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c_save
+2022-06-26 13:06:37,121 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c
+2022-06-26 13:06:37,136 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h_save
+2022-06-26 13:06:37,262 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h
+2022-06-26 13:06:37,277 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h_save
+2022-06-26 13:06:37,387 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h
+2022-06-26 13:06:37,402 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c_save
+2022-06-26 13:06:37,528 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c
+2022-06-26 13:06:37,559 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h_save
+2022-06-26 13:06:37,684 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h
+2022-06-26 13:06:37,703 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c_save
+2022-06-26 13:06:37,803 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c
+2022-06-26 13:06:37,810 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h_save
+2022-06-26 13:06:37,904 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h
+2022-06-26 13:06:37,920 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c_save
+2022-06-26 13:06:38,028 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c
+2022-06-26 13:06:38,059 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 13:06:38,169 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 13:06:38,169 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 13:06:38,279 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 13:06:38,295 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 13:06:38,545 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 13:06:38,561 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 13:06:38,686 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 13:06:38,718 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 13:06:38,867 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 13:06:38,905 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 13:06:39,008 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 13:06:39,024 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 13:06:39,243 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 13:06:40,059 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 346mS.
+2022-06-26 13:06:40,074 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 13:06:40,341 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 13:06:42,557 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 2483mS.
+2022-06-26 13:06:42,557 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:06:42,572 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:25:56,784 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 370574880 Bytes (1072693248)
+2022-06-26 13:25:56,878 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 322572928 Bytes (1072693248)
+2022-06-26 13:25:57,418 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 357698176 Bytes (1072693248)
+2022-06-26 13:25:57,644 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SPI
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_DEVICE
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:25:57,654 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 13:25:57,654 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 13:25:57,952 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 13:25:58,045 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 13:25:58,059 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 13:25:58,185 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 13:25:58,232 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 13:25:58,232 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp_save
+2022-06-26 13:25:58,346 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp
+2022-06-26 13:25:58,357 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp_save
+2022-06-26 13:25:58,404 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp
+2022-06-26 13:25:58,404 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp_save
+2022-06-26 13:25:58,514 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp
+2022-06-26 13:25:58,514 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp_save
+2022-06-26 13:25:58,593 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp
+2022-06-26 13:25:58,718 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:25:58,734 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:25:58,750 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c_save
+2022-06-26 13:25:58,847 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c
+2022-06-26 13:25:58,859 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h_save
+2022-06-26 13:25:58,906 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h
+2022-06-26 13:25:58,922 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h_save
+2022-06-26 13:25:58,992 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h
+2022-06-26 13:25:58,996 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c_save
+2022-06-26 13:25:59,075 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c
+2022-06-26 13:25:59,091 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h_save
+2022-06-26 13:25:59,169 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h
+2022-06-26 13:25:59,169 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c_save
+2022-06-26 13:25:59,263 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c
+2022-06-26 13:25:59,279 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h_save
+2022-06-26 13:25:59,373 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h
+2022-06-26 13:25:59,373 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c_save
+2022-06-26 13:25:59,483 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c
+2022-06-26 13:25:59,498 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 13:25:59,624 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 13:25:59,624 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 13:25:59,733 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 13:25:59,749 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 13:25:59,859 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 13:25:59,859 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 13:26:00,042 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 13:26:00,049 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 13:26:00,144 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 13:26:00,171 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 13:26:00,265 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 13:26:00,265 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 13:26:00,375 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 13:26:01,200 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 308mS.
+2022-06-26 13:26:01,200 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 13:26:01,420 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 13:26:02,998 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1798mS.
+2022-06-26 13:26:02,999 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 1mS.
+2022-06-26 13:26:03,004 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:31:55,521 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 755711504 Bytes (1072693248)
+2022-06-26 13:31:55,598 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 772488720 Bytes (1072693248)
+2022-06-26 13:31:56,152 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 851131936 Bytes (1072693248)
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SPI
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_OTG_HS
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USB_DEVICE
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2022-06-26 13:31:56,434 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-26 13:31:56,450 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-26 13:31:56,779 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp_save
+2022-06-26 13:31:56,889 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\license.tmp
+2022-06-26 13:31:56,905 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp_save
+2022-06-26 13:31:56,996 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\gpio.tmp
+2022-06-26 13:31:57,059 [WARN] IPConfigManager:2886 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2022-06-26 13:31:57,059 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp_save
+2022-06-26 13:31:57,169 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_vars.tmp
+2022-06-26 13:31:57,169 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp_save
+2022-06-26 13:31:57,224 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_inc.tmp
+2022-06-26 13:31:57,224 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp_save
+2022-06-26 13:31:57,294 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_HalInit.tmp
+2022-06-26 13:31:57,310 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp_save
+2022-06-26 13:31:57,373 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\usb_otg_hs_Msp.tmp
+2022-06-26 13:31:57,577 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:31:57,592 [INFO] Middleware:1388 - No code input for Bsp Dependency
+2022-06-26 13:31:57,608 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c_save
+2022-06-26 13:31:57,718 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.c
+2022-06-26 13:31:57,725 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h_save
+2022-06-26 13:31:57,781 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usb_device.h
+2022-06-26 13:31:57,796 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h_save
+2022-06-26 13:31:57,890 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.h
+2022-06-26 13:31:57,906 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c_save
+2022-06-26 13:31:58,010 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\Target\usbd_conf.c
+2022-06-26 13:31:58,010 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h_save
+2022-06-26 13:31:58,073 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.h
+2022-06-26 13:31:58,089 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c_save
+2022-06-26 13:31:58,167 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_desc.c
+2022-06-26 13:31:58,183 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h_save
+2022-06-26 13:31:58,230 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.h
+2022-06-26 13:31:58,246 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c_save
+2022-06-26 13:31:58,326 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\USB_DEVICE\App\usbd_cdc_if.c
+2022-06-26 13:31:58,340 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c_save
+2022-06-26 13:31:58,418 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_it.c
+2022-06-26 13:31:58,426 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h_save
+2022-06-26 13:31:58,481 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_it.h
+2022-06-26 13:31:58,497 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-26 13:31:58,591 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\stm32f4xx_hal_msp.c
+2022-06-26 13:31:58,607 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp_save
+2022-06-26 13:31:58,654 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\MXTmpFiles\system.tmp
+2022-06-26 13:31:58,670 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-26 13:31:58,827 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-26 13:31:58,858 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h_save
+2022-06-26 13:31:59,011 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Inc\main.h
+2022-06-26 13:31:59,011 [INFO] CodeEngine:237 - oldGeneratedFile, C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c_save
+2022-06-26 13:31:59,184 [INFO] CodeEngine:261 - Generated code: C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\Core\Src\main.c
+2022-06-26 13:32:00,042 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 325mS.
+2022-06-26 13:32:00,042 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-26 13:32:00,308 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-26 13:32:01,737 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1695mS.
+2022-06-26 13:32:01,737 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-26 13:32:01,737 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.

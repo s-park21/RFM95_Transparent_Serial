@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;RFM95_Transparent_Serial/Core/Src/retarget.c&apos;" deleteContents="false" description="Delete resource &apos;RFM95_Transparent_Serial/Core/Src/retarget.c&apos;" element1="/RFM95_Transparent_Serial/Core/Src/retarget.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1656213433577"/>
+</session>
