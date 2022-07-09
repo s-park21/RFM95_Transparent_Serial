@@ -64,8 +64,8 @@ all: main-build
 main-build: RFM95_Transparent_Serial.elf secondary-outputs
 
 # Tool invocations
-RFM95_Transparent_Serial.elf RFM95_Transparent_Serial.map: $(OBJS) $(USER_OBJS) C:\Users\Angus\ McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "RFM95_Transparent_Serial.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RFM95_Transparent_Serial.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+RFM95_Transparent_Serial.elf RFM95_Transparent_Serial.map: $(OBJS) $(USER_OBJS) C:\Users\thean\OneDrive\Documents\Other\ Projects\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "RFM95_Transparent_Serial.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\thean\OneDrive\Documents\Other Projects\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RFM95_Transparent_Serial.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

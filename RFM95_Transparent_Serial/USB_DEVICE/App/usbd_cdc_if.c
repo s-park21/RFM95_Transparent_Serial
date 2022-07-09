@@ -22,7 +22,7 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include <stdbool.h>
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,7 +31,9 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+extern uint8_t USB_Buff[256];
+extern bool USB_READY;
+extern uint8_t USB_rx_data_len;
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -266,6 +268,14 @@ static int8_t CDC_Receive_HS(uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 11 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceHS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceHS);
+  // Signal to main thread that USB has received data
+  USB_READY = true;
+  // Put usb data into usb buffer
+  memset (USB_Buff, '\0', sizeof(USB_Buff));  	// clear the usb buffer
+  USB_rx_data_len = (uint8_t)*Len;				// Find length of data sent
+  memcpy(USB_Buff, Buf, USB_rx_data_len);  // copy the data to the buffer
+  memset(Buf, '\0', USB_rx_data_len);   // clear the Buf
+
   return (USBD_OK);
   /* USER CODE END 11 */
 }

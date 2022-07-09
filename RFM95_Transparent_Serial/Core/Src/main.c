@@ -52,11 +52,15 @@ UART_HandleTypeDef* USB_UART = &huart1;
 SPI_HandleTypeDef* RF_SPI = &hspi1;
 
 // Variable to store number of available bytes to read
-uint8_t RF_avilable_bytes = 0;
+uint8_t RF_available_bytes = 0;
 // RF RX buffer
 uint8_t RF_RX_Buff[256];
 uint8_t UART_Buff[256];
 bool UART_READY = false;
+
+uint8_t USB_Buff[256];
+bool USB_READY = false;
+uint8_t USB_rx_data_len = 0; 	// Number of bytes read by usb
 
 /* USER CODE END PV */
 
@@ -105,8 +109,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_USB_DEVICE_Init();
   MX_SPI1_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   // UART interrupt init
@@ -119,8 +123,8 @@ int main(void)
   LoRaClass.CS_pin                = RF_SPI_NSS_Pin;
   LoRaClass.reset_port            = RESET_RF_GPIO_Port;
   LoRaClass.reset_pin             = RESET_RF_Pin;
-  LoRaClass.DIO0_port			  = IO1_RF_GPIO_Port;
-  LoRaClass.DIO0_pin			  = IO1_RF_Pin;
+  LoRaClass.DIO0_port			  = IO0_RF_GPIO_Port;
+  LoRaClass.DIO0_pin			  = IO0_RF_Pin;
 
   LoRaClass.frequency             = 915;
   LoRaClass.spredingFactor        = SF_7;						// default = SF_7
@@ -130,8 +134,21 @@ int main(void)
   LoRaClass.overCurrentProtection = 120; 						// default = 100 mA
   LoRaClass.preamble			  = 10;		  					// default = 8;
 
+  HAL_GPIO_WritePin(RF_SPI_NSS_GPIO_Port, RF_SPI_NSS_Pin, GPIO_PIN_SET);
+
   LoRa_reset(&LoRaClass);
-  LoRa_init(&LoRaClass);
+  uint32_t result = LoRa_init(&LoRaClass);
+  if(result == LORA_OK) {
+	  CDC_Transmit_HS("LORA_OK\r\n", sizeof("LORA_OK\r\n"));
+  }
+  else if(result == LORA_NOT_FOUND) {
+	  CDC_Transmit_HS("LORA_NOT_FOUND\r\n", sizeof("LORA_NOT_FOUND\r\n"));
+	  Blocking_LED_Blink(1);
+  }
+  else if(result == LORA_UNAVAILABLE) {
+	  CDC_Transmit_HS("LORA_UNAVAILABLE\r\n", sizeof("LORA_UNAVAILABLE\r\n"));
+	  Blocking_LED_Blink(2);
+  }
 
   // START CONTINUOUS RECEIVING -----------------------------------
   LoRa_startReceiving(&LoRaClass);
@@ -145,14 +162,23 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+//	  RF_available_bytes = LoRa_received_bytes(&LoRaClass);
 
-	  if(RF_avilable_bytes) {
+//	  uint8_t outputArr[10];
+//	  memset(outputArr, '\0', sizeof(outputArr));
+//	  LoRa_readReg(&LoRaClass, RegVersion, sizeof(RegVersion), outputArr, 4);
+//	  CDC_Transmit_HS(outputArr, sizeof(outputArr));
+
+	  if(RF_available_bytes) {
 		  // Bytes in RF RX buffer to read
 		  // Read bytes into buffer
-		  LoRa_receive(&LoRaClass, RF_RX_Buff, RF_avilable_bytes);
+		  LoRa_receive(&LoRaClass, RF_RX_Buff, RF_available_bytes);
 		  // Transmit bytes from RF_RX_Buff over UART
-		  HAL_UART_Transmit(USB_UART, RF_RX_Buff, RF_avilable_bytes, 1000);
-		  RF_avilable_bytes = 0;
+		  HAL_UART_Transmit(USB_UART, RF_RX_Buff, RF_available_bytes, 1000);
+		  // Transmit bytes from RF_RX Buff over USB
+		  CDC_Transmit_HS(RF_RX_Buff, RF_available_bytes);
+
+		  RF_available_bytes = 0;
 	  }
 
 	  if(UART_READY) {
@@ -161,6 +187,16 @@ int main(void)
 		  if (!LoRa_transmit(&LoRaClass, UART_Buff, (uint8_t)sizeof(UART_Buff), 1000)) {
 			  // Print error msg
 		  }
+		  LoRa_startReceiving(&LoRaClass);
+	  }
+
+	  if(USB_READY) {
+		  if (!LoRa_transmit(&LoRaClass, USB_Buff, USB_rx_data_len, 1000)) {
+		  			  // Print error msg
+		  }
+		  USB_READY = false;
+		  USB_rx_data_len = 0;
+		  LoRa_startReceiving(&LoRaClass);
 	  }
 
   }
@@ -234,8 +270,8 @@ static void MX_SPI1_Init(void)
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -271,7 +307,7 @@ static void MX_USART1_UART_Init(void)
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
   huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_RTS_CTS;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart1.Init.OverSampling = UART_OVERSAMPLING_16;
   if (HAL_UART_Init(&huart1) != HAL_OK)
   {
@@ -333,10 +369,20 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(RF_SPI_NSS_GPIO_Port, RF_SPI_NSS_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(RESET_RF_GPIO_Port, RESET_RF_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : RF_SPI_NSS_Pin */
+  GPIO_InitStruct.Pin = RF_SPI_NSS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(RF_SPI_NSS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : RESET_RF_Pin */
   GPIO_InitStruct.Pin = RESET_RF_Pin;
@@ -366,12 +412,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(INDICATOR_LED_GPIO_Port, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI1_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == LoRaClass.DIO0_pin){
-		RF_avilable_bytes = LoRa_received_bytes(&LoRaClass);
+		RF_available_bytes = LoRa_received_bytes(&LoRaClass);
 	}
 }
 
@@ -381,6 +434,14 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     UART_READY = true;
 }
 
+void Blocking_LED_Blink(uint8_t freq) {
+	while(1) {
+		HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
+		HAL_Delay(1000/freq);
+		HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
+		HAL_Delay(1000/freq);
+	}
+}
 
 /* USER CODE END 4 */
 

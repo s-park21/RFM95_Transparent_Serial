@@ -20,7 +20,7 @@ Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,LCSC,Purchased
 11,4,"H1, H2, H3, H4",MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm_Pad,~,,Y
 12,1,J1,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal,~,,
 13,2,"J2, J3",SM06B-GHS-TB(LF)(SN),SM06B-GHS-TB_LF__SN_:SM06B-GHS-TB(LF)(SN),Footprints:JST_SM06B-GHS-TB(LF)(SN),,,
-14,2,"J4, J5",USB_B_Micro,Connector:USB_B_Micro,Connector_USB:USB_Micro-B_Molex-105017-0001,~,,
+14,2,"J4, J5",USB_B_Micro,Connector:USB_B_Micro,Connector_USB:USB_Micro-B_Molex-105017-0001,~,,Y
 15,2,"R1, R2",10k,Nebula-rescue:R_Small-Device-H7_FlightComputer-rescue,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,,
 16,2,"R3, R4",10R,Nebula-rescue:R_Small-Device-H7_FlightComputer-rescue,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,,
 17,1,R5,200R,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,~,,
