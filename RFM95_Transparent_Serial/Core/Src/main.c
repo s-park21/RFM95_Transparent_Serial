@@ -55,12 +55,15 @@ SPI_HandleTypeDef* RF_SPI = &hspi1;
 uint8_t RF_available_bytes = 0;
 // RF RX buffer
 uint8_t RF_RX_Buff[256];
-uint8_t UART_Buff[256];
+uint8_t UART_Buff[12];
 bool UART_READY = false;
 
 uint8_t USB_Buff[256];
 bool USB_READY = false;
 uint8_t USB_rx_data_len = 0; 	// Number of bytes read by usb
+
+// Header string identifier used to verify that received packet is correct
+char header_string[5] = "FM3DR";
 
 /* USER CODE END PV */
 
@@ -138,16 +141,12 @@ int main(void)
 
   LoRa_reset(&LoRaClass);
   uint32_t result = LoRa_init(&LoRaClass);
-  if(result == LORA_OK) {
-	  CDC_Transmit_HS("LORA_OK\r\n", sizeof("LORA_OK\r\n"));
-  }
-  else if(result == LORA_NOT_FOUND) {
-	  CDC_Transmit_HS("LORA_NOT_FOUND\r\n", sizeof("LORA_NOT_FOUND\r\n"));
+
+  if(result == LORA_NOT_FOUND) {
 	  Blocking_LED_Blink(1);
   }
   else if(result == LORA_UNAVAILABLE) {
-	  CDC_Transmit_HS("LORA_UNAVAILABLE\r\n", sizeof("LORA_UNAVAILABLE\r\n"));
-	  Blocking_LED_Blink(2);
+	  Blocking_LED_Blink(1);
   }
 
   // START CONTINUOUS RECEIVING -----------------------------------
@@ -170,33 +169,52 @@ int main(void)
 //	  CDC_Transmit_HS(outputArr, sizeof(outputArr));
 
 	  if(RF_available_bytes) {
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
 		  // Bytes in RF RX buffer to read
 		  // Read bytes into buffer
 		  LoRa_receive(&LoRaClass, RF_RX_Buff, RF_available_bytes);
-		  // Transmit bytes from RF_RX_Buff over UART
-		  HAL_UART_Transmit(USB_UART, RF_RX_Buff, RF_available_bytes, 1000);
-		  // Transmit bytes from RF_RX Buff over USB
-		  CDC_Transmit_HS(RF_RX_Buff, RF_available_bytes);
+		  // Check packet identifier
+		  if(!memcmp(RF_RX_Buff, (uint8_t*)header_string, 5)) {
+			  // Header byte is correct
+			  // Transmit bytes from RF_RX_Buff over UART not including packet identifier
+			  HAL_UART_Transmit(USB_UART, &RF_RX_Buff[sizeof(header_string)], RF_available_bytes-sizeof(header_string), 1000);
+			  // Transmit bytes from RF_RX Buff over USB not including packet identifier
+			  CDC_Transmit_HS(&RF_RX_Buff[sizeof(header_string)], RF_available_bytes-sizeof(header_string));
+		  }
 
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
 		  RF_available_bytes = 0;
 	  }
 
 	  if(UART_READY) {
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
 		  UART_READY = false;
+		  uint8_t sendBuff[256+5];
+		  // Add packet identifier
+		  memcpy(&sendBuff, (uint8_t*)header_string, sizeof(header_string));
+		  memcpy(&sendBuff[sizeof(header_string)], &UART_Buff, sizeof(UART_Buff));
 		  // Transmit UART buffer over RF
-		  if (!LoRa_transmit(&LoRaClass, UART_Buff, (uint8_t)sizeof(UART_Buff), 1000)) {
+		  if (!LoRa_transmit(&LoRaClass, sendBuff, (uint8_t)(sizeof(header_string)+sizeof(UART_Buff)), 1000)) {
 			  // Print error msg
 		  }
 		  LoRa_startReceiving(&LoRaClass);
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
 	  }
 
 	  if(USB_READY) {
-		  if (!LoRa_transmit(&LoRaClass, USB_Buff, USB_rx_data_len, 1000)) {
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
+		  uint8_t sendBuff[256+5];
+		  // Add packet identifier
+		  memcpy(&sendBuff, (uint8_t*)header_string, sizeof(header_string));
+		  memcpy(&sendBuff[sizeof(header_string)], &USB_Buff, USB_rx_data_len);
+		  // Transmit USB buffer over RF
+		  if (!LoRa_transmit(&LoRaClass, sendBuff, USB_rx_data_len+sizeof(header_string), 1000)) {
 		  			  // Print error msg
 		  }
 		  USB_READY = false;
 		  USB_rx_data_len = 0;
 		  LoRa_startReceiving(&LoRaClass);
+		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
 	  }
 
   }
