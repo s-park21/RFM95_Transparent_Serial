@@ -31,9 +31,8 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-extern uint8_t USB_Buff[256];
-extern bool USB_READY;
-extern uint8_t USB_rx_data_len;
+extern uint8_t RF_transmit_buffer[2*256];
+extern uint8_t RF_transmit_buff_offset;
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -268,14 +267,11 @@ static int8_t CDC_Receive_HS(uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 11 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceHS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceHS);
-  // Signal to main thread that USB has received data
-  USB_READY = true;
   // Put usb data into usb buffer
-  memset (USB_Buff, '\0', sizeof(USB_Buff));  	// clear the usb buffer
-  USB_rx_data_len = (uint8_t)*Len;				// Find length of data sent
-  memcpy(USB_Buff, Buf, USB_rx_data_len);  // copy the data to the buffer
-  memset(Buf, '\0', USB_rx_data_len);   // clear the Buf
-
+  if((RF_transmit_buff_offset + *Len) > sizeof(RF_transmit_buffer)) RF_transmit_buff_offset = 0;
+  memcpy(&RF_transmit_buffer[RF_transmit_buff_offset], Buf, *Len);  // copy the data to the RF_transmit_buffer
+  memset(Buf, '\0', *Len);   // clear the Buf
+  RF_transmit_buff_offset += *Len;
   return (USBD_OK);
   /* USER CODE END 11 */
 }

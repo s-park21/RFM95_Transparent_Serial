@@ -30,6 +30,11 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+// ************** Below is used to define if the device is a slave or master *******************
+//#define SLAVE_DEVICE
+#define MASTER_DEVICE
+// *********************************************************************************************
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -44,35 +49,53 @@
 /* Private variables ---------------------------------------------------------*/
  SPI_HandleTypeDef hspi1;
 
+TIM_HandleTypeDef htim2;
+
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
+DMA_HandleTypeDef hdma_usart1_rx;
 
 /* USER CODE BEGIN PV */
 UART_HandleTypeDef* USB_UART = &huart1;
 SPI_HandleTypeDef* RF_SPI = &hspi1;
+TIM_HandleTypeDef* Poll_Timer = &htim2;
+
+#define HEADER_STRING_SIZE 4
+#define MAX_RF_PACKET_SIZE 256
+#define MAX_SERIAL_PACKET_SIZE(MAX_RF_PACKET_SIZE) (MAX_RF_PACKET_SIZE*2)
+#define PREAMBLE_SIZE(HEADER_STRING_SIZE) (HEADER_STRING_SIZE+sizeof(uint16_t))
+#define MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) (MAX_RF_PACKET_SIZE -  PREAMBLE_SIZE(HEADER_STRING_SIZE))
+#define MAX_UART_DATA_SIZE 240
 
 // Variable to store number of available bytes to read
 uint8_t RF_available_bytes = 0;
 // RF RX buffer
-uint8_t RF_RX_Buff[256];
-uint8_t UART_Buff[12];
+uint8_t RF_RX_Buff[MAX_RF_PACKET_SIZE];
+uint8_t RF_TX_Buff[MAX_RF_PACKET_SIZE];
+//uint8_t UART_Buff[MAX_RF_PACKET_SIZE-PREAMBLE_SIZE(HEADER_STRING_SIZE)];
+uint8_t UART_Buff[2*MAX_UART_DATA_SIZE];
+uint8_t UART_PACKET_SIZE = sizeof(UART_Buff)/2;
+uint8_t USB_Buff[MAX_RF_PACKET_SIZE-PREAMBLE_SIZE(HEADER_STRING_SIZE)];
+uint8_t RF_transmit_buffer[2*MAX_RF_PACKET_SIZE];
+uint16_t RF_transmit_buff_offset = 0;
 bool UART_READY = false;
-
-uint8_t USB_Buff[256];
-bool USB_READY = false;
+bool POLL_READY = false;
+bool MASTER_READY = false;
 uint8_t USB_rx_data_len = 0; 	// Number of bytes read by usb
 
-// Header string identifier used to verify that received packet is correct
-char header_string[5] = "FM3DR";
+// static void MX_DMA_Init(void); MUST BE INIT BEFORE static void MX_USART1_UART_Init(void);
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
+
+static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -105,7 +128,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  //***************************** DMA MUST INIT BEFORE UART ***********************
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -113,11 +136,15 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_SPI1_Init();
+  MX_DMA_Init();
+  MX_TIM2_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
+  // Polling timer init
+  HAL_TIM_Base_Start_IT(Poll_Timer);
   // UART interrupt init
-  HAL_UART_Receive_IT (USB_UART, UART_Buff, sizeof(UART_Buff));
+  HAL_UART_Receive_DMA (USB_UART, UART_Buff, sizeof(UART_Buff));
 
   // LoRa Class definitions
   LoRaClass = newLoRa();
@@ -161,62 +188,141 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  RF_available_bytes = LoRa_received_bytes(&LoRaClass);
-
-//	  uint8_t outputArr[10];
-//	  memset(outputArr, '\0', sizeof(outputArr));
-//	  LoRa_readReg(&LoRaClass, RegVersion, sizeof(RegVersion), outputArr, 4);
-//	  CDC_Transmit_HS(outputArr, sizeof(outputArr));
 
 	  if(RF_available_bytes) {
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
 		  // Bytes in RF RX buffer to read
 		  // Read bytes into buffer
 		  LoRa_receive(&LoRaClass, RF_RX_Buff, RF_available_bytes);
+		  // Buffer to contain data to be transmitted over UART and USB
+		  uint8_t serialBuff[MAX_SERIAL_PACKET_SIZE(MAX_RF_PACKET_SIZE)];
+
 		  // Check packet identifier
-		  if(!memcmp(RF_RX_Buff, (uint8_t*)header_string, 5)) {
-			  // Header byte is correct
-			  // Transmit bytes from RF_RX_Buff over UART not including packet identifier
-			  HAL_UART_Transmit(USB_UART, &RF_RX_Buff[sizeof(header_string)], RF_available_bytes-sizeof(header_string), 1000);
-			  // Transmit bytes from RF_RX Buff over USB not including packet identifier
-			  CDC_Transmit_HS(&RF_RX_Buff[sizeof(header_string)], RF_available_bytes-sizeof(header_string));
+#ifdef MASTER_DEVICE
+		  if(!memcmp(RF_RX_Buff, (uint8_t*)"SRSP", HEADER_STRING_SIZE)) {
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
+			  // Header byte is packet type 2 (Slave response)
+			  uint16_t data_len = (uint16_t)(RF_RX_Buff[HEADER_STRING_SIZE]<<8 | RF_RX_Buff[HEADER_STRING_SIZE+1]);
+
+			  if(data_len > MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE)) {
+				  RF_available_bytes = 0;
+				  // Data spans over two packets
+				  // Put all available bytes into serialBuff
+				  memcpy(serialBuff,  &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE));
+				  memset(RF_RX_Buff, '\0', sizeof(RF_RX_Buff));
+				  // Wait for next packet
+				  while(memcmp(RF_RX_Buff, (uint8_t*)"SRSP", HEADER_STRING_SIZE) != 0) {
+					  LoRa_receive(&LoRaClass, RF_RX_Buff, data_len - MAX_RF_PACKET_SIZE);
+				  }
+				  data_len = (uint16_t)(RF_RX_Buff[HEADER_STRING_SIZE]<<8 | RF_RX_Buff[HEADER_STRING_SIZE+1]);
+				  // Add new data to end of previous packet
+				  memcpy(&serialBuff[MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE)], &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], data_len);
+				  // Transmit concatenated buffer over USB and UART
+				  CDC_Transmit_HS(serialBuff, MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) + data_len);
+				  HAL_UART_Transmit(USB_UART, serialBuff, MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) + data_len, 1000);
+				  RF_available_bytes = 0;
+			  }
+			  else {
+				  // Data is all contained within one packet
+				  // Transmit bytes from RF_RX_Buff over UART not including packet identifier or data length field
+				  HAL_UART_Transmit(USB_UART, &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], RF_available_bytes-PREAMBLE_SIZE(HEADER_STRING_SIZE), 1000);
+				  // Transmit bytes from RF_RX Buff over USB not including packet identifier
+				  CDC_Transmit_HS(&RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], RF_available_bytes-PREAMBLE_SIZE(HEADER_STRING_SIZE));
+				  RF_available_bytes = 0;
+			  }
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
 		  }
 
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
-		  RF_available_bytes = 0;
-	  }
-
-	  if(UART_READY) {
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
-		  UART_READY = false;
-		  uint8_t sendBuff[256+5];
-		  // Add packet identifier
-		  memcpy(&sendBuff, (uint8_t*)header_string, sizeof(header_string));
-		  memcpy(&sendBuff[sizeof(header_string)], &UART_Buff, sizeof(UART_Buff));
-		  // Transmit UART buffer over RF
-		  if (!LoRa_transmit(&LoRaClass, sendBuff, (uint8_t)(sizeof(header_string)+sizeof(UART_Buff)), 1000)) {
-			  // Print error msg
+#elif defined SLAVE_DEVICE
+		  if(!memcmp(RF_RX_Buff, (uint8_t*)"MREQ", HEADER_STRING_SIZE)) {
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
+			  MASTER_READY = true;
+			  // Header byte is packet type 1 (Master request)
+			  uint16_t data_len = (uint16_t)(RF_RX_Buff[HEADER_STRING_SIZE]<<8 | RF_RX_Buff[HEADER_STRING_SIZE+1]);
+			  if(data_len > MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE)) {
+				  RF_available_bytes = 0;
+				  // Data spans over two packets
+				  // Put all available bytes into serialBuff
+				  memcpy(serialBuff,  &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE));
+				  memset(RF_RX_Buff, '\0', sizeof(RF_RX_Buff));
+				  // Wait for next packet
+				  while(memcmp(RF_RX_Buff, (uint8_t*)"SRSP", HEADER_STRING_SIZE) != 0) {
+					  LoRa_receive(&LoRaClass, RF_RX_Buff, data_len - MAX_RF_PACKET_SIZE);
+				  }
+				  data_len = (uint16_t)(RF_RX_Buff[HEADER_STRING_SIZE]<<8 | RF_RX_Buff[HEADER_STRING_SIZE+1]);
+				  // Add new data to end of previous packet
+				  memcpy(&serialBuff[MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE)], &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], data_len);
+				  // Transmit concatenated buffer over USB and UART
+				  CDC_Transmit_HS(serialBuff, MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) + data_len);
+				  HAL_UART_Transmit(USB_UART, serialBuff, MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) + data_len, 1000);
+				  RF_available_bytes = 0;
+			  }
+			  else if (data_len > 0) {
+				  // Data is all contained within one packet
+				  // Transmit bytes from RF_RX_Buff over UART not including packet identifier or data length field
+				  HAL_UART_Transmit(USB_UART, &RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], RF_available_bytes-PREAMBLE_SIZE(HEADER_STRING_SIZE), 1000);
+				  // Transmit bytes from RF_RX Buff over USB not including packet identifier
+				  CDC_Transmit_HS(&RF_RX_Buff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], RF_available_bytes-PREAMBLE_SIZE(HEADER_STRING_SIZE));
+				  RF_available_bytes = 0;
+			  }
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
 		  }
-		  LoRa_startReceiving(&LoRaClass);
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
+		  else RF_available_bytes = 0;
+#endif
 	  }
 
-	  if(USB_READY) {
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
-		  uint8_t sendBuff[256+5];
-		  // Add packet identifier
-		  memcpy(&sendBuff, (uint8_t*)header_string, sizeof(header_string));
-		  memcpy(&sendBuff[sizeof(header_string)], &USB_Buff, USB_rx_data_len);
-		  // Transmit USB buffer over RF
-		  if (!LoRa_transmit(&LoRaClass, sendBuff, USB_rx_data_len+sizeof(header_string), 1000)) {
-		  			  // Print error msg
+#ifdef MASTER_DEVICE
+	  if (POLL_READY) {
+		  if(UART_READY) {
+			  UART_READY = false;
+			  uint8_t sendBuff[MAX_RF_PACKET_SIZE];
+			  // Add packet identifier
+			  memcpy(&sendBuff, (uint8_t*)"MREQ", sizeof("MREQ"));
+			  // Add data length field
+			  memcpy(&sendBuff[sizeof("MREQ")], &UART_PACKET_SIZE, sizeof(uint16_t));
+			  // Add data to sendBuff
+			  memcpy(&sendBuff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], &RF_transmit_buffer, UART_PACKET_SIZE);
+			  // Transmit USB buffer over RF
+			  if (!LoRa_transmit(&LoRaClass, sendBuff, RF_transmit_buff_offset+PREAMBLE_SIZE(HEADER_STRING_SIZE), 1000)) {
+						  // Print error msg
+			  }
+			  RF_transmit_buff_offset = 0;
+			  LoRa_startReceiving(&LoRaClass);
 		  }
-		  USB_READY = false;
-		  USB_rx_data_len = 0;
-		  LoRa_startReceiving(&LoRaClass);
-		  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
+		  if(!UART_READY && !USB_rx_data_len) {
+			  uint8_t sendBuff[MAX_RF_PACKET_SIZE];
+			  // Send empty data packet
+			  // Add packet identifier
+			  memcpy(&sendBuff, (uint8_t*)"MREQ\0\0", sizeof("MREQ\0\0"));
+			  if (!LoRa_transmit(&LoRaClass, sendBuff, PREAMBLE_SIZE(HEADER_STRING_SIZE), 1000)) {
+				  // Print error msg
+			  }
+		  }
 	  }
+	  POLL_READY = false;
 
+#elif defined SLAVE_DEVICE
+	  if(MASTER_READY) {
+		  MASTER_READY = false;
+		  if(UART_READY) {
+			  UART_READY = false;
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_SET);
+			  uint8_t sendBuff[MAX_RF_PACKET_SIZE];
+			  // Add packet identifier
+			  memcpy(&sendBuff, (uint8_t*)"SRSP", sizeof("SRSP"));
+			  // Add data length field
+			  memcpy(&sendBuff[sizeof("SRSP")], &UART_PACKET_SIZE, sizeof(uint16_t));
+			  // Add data to sendBuff
+			  memcpy(&sendBuff[PREAMBLE_SIZE(HEADER_STRING_SIZE)], &RF_transmit_buffer, UART_PACKET_SIZE);
+			  // Transmit USB buffer over RF
+			  if (!LoRa_transmit(&LoRaClass, sendBuff, UART_PACKET_SIZE+PREAMBLE_SIZE(HEADER_STRING_SIZE), 1000)) {
+						  // Print error msg
+			  }
+			  RF_transmit_buff_offset = 0;
+			  LoRa_startReceiving(&LoRaClass);
+			  HAL_GPIO_WritePin(INDICATOR_LED_GPIO_Port, INDICATOR_LED_Pin, GPIO_PIN_RESET);
+		  }
+	  }
+#endif
   }
   /* USER CODE END 3 */
 }
@@ -305,6 +411,51 @@ static void MX_SPI1_Init(void)
 }
 
 /**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 2500;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 16800;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
   * @brief USART1 Initialization Function
   * @param None
   * @retval None
@@ -320,7 +471,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 57600;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -353,7 +504,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 57600;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
@@ -367,6 +518,22 @@ static void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
 
   /* USER CODE END USART2_Init 2 */
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA2_Stream2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
 
 }
 
@@ -448,9 +615,28 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-    HAL_UART_Receive_IT(USB_UART, UART_Buff, sizeof(UART_Buff));
-    UART_READY = true;
+	HAL_UART_Receive_DMA (USB_UART, UART_Buff, sizeof(UART_Buff));
+	UART_READY = true;
+	// Add second half of data to sendBuff
+	memcpy(RF_transmit_buffer, &UART_Buff[UART_PACKET_SIZE], UART_PACKET_SIZE);
 }
+
+void HAL_UART_RxHalfCpltCallback(UART_HandleTypeDef *huart) {
+	UART_READY = true;
+	// Add first half of data to sendBuff
+	memcpy(RF_transmit_buffer, &UART_Buff, UART_PACKET_SIZE);
+}
+
+
+#ifdef MASTER_DEVICE
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+    if(htim == Poll_Timer) {
+    	// Poll slave device
+    	POLL_READY = true;
+    }
+}
+#endif
 
 void Blocking_LED_Blink(uint8_t freq) {
 	while(1) {
