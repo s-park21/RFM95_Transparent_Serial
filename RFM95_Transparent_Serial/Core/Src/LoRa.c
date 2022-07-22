@@ -61,8 +61,14 @@ void LoRa_gotoMode(LoRa* _LoRa, int mode){
 	}else if (mode == STNBY_MODE){
 		data = (read & 0xF8) | 0x01;
 		_LoRa->current_mode = STNBY_MODE;
+	}else if (mode == FS_MODE_TX) {
+		data = (read & 0xF8) | 0x02;
+		_LoRa->current_mode = FS_MODE_TX;
 	}else if (mode == TRANSMIT_MODE){
 		data = (read & 0xF8) | 0x03;
+		_LoRa->current_mode = TRANSMIT_MODE;
+	}else if (mode == FS_MODE_RX){
+		data = (read & 0xF8) | 0x04;
 		_LoRa->current_mode = TRANSMIT_MODE;
 	}else if (mode == RXCONTIN_MODE){
 		data = (read & 0xF8) | 0x05;
@@ -73,9 +79,41 @@ void LoRa_gotoMode(LoRa* _LoRa, int mode){
 	}
 
 	LoRa_write(_LoRa, RegOpMode, data);
-	//HAL_Delay(10);
+	HAL_Delay(10);
 }
 
+/* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setModulation
+		description : set modem into FSK/OOK or LoRa mode
+		arguments   :
+			LoRa* LoRa    --> LoRa object handler
+			mode	        --> select from defined modes. 0->FSK, 1->OOK, 2->LoRa
+		returns     : Nothing
+\* ----------------------------------------------------------------------------- */
+void LoRa_setModulation(LoRa* _LoRa, int mode) {
+	uint8_t read = LoRa_read(_LoRa, RegOpMode);
+	uint8_t data = read;
+	uint8_t prev_mode = _LoRa->current_mode;
+
+	// Set modem to sleep mode
+	LoRa_gotoMode(_LoRa, SLEEP_MODE);
+
+	// Toggle first RegOpMode bit
+	if(mode == 2) {	// LoRa
+		LoRa_write(_LoRa, RegOpMode, (read & 0x7F) | 0x80);
+	}
+	else if (mode == 1) {	// OOK
+		LoRa_write(_LoRa, RegOpMode, (read & 0x7F));
+		LoRa_write(_LoRa, RegOpMode, (read & 0x60) | 0x20);
+	}
+	else if (mode == 0) {	// FSK
+		LoRa_write(_LoRa, RegOpMode, (read & 0x7F));
+		LoRa_write(_LoRa, RegOpMode, (read & 0x60));
+	}
+
+	HAL_Delay(10);
+	LoRa_gotoMode(_LoRa, prev_mode);
+}
 
 /* ----------------------------------------------------------------------------- *\
 		name        : LoRa_readReg
@@ -224,13 +262,38 @@ void LoRa_setOCP(LoRa* _LoRa, uint8_t current){
 			LoRa* LoRa        --> LoRa object handler
 		returns     : Nothing
 \* ----------------------------------------------------------------------------- */
+void LoRa_setCRCon(LoRa* _LoRa) {
+	uint8_t read, data;
+	if(_LoRa->modulationMode == LORA_MODULATION) {
+		read = LoRa_read(_LoRa, RegModemConfig2);
+		data = (read & 0xFB) | 0x04;
+		LoRa_write(_LoRa, RegModemConfig2, data);
+	}
+	else {
+		read = LoRa_read(_LoRa, RegPacketConfig1);
+		data = (read & 0xEF) | 0x10;
+		LoRa_write(_LoRa, RegModemConfig2, data);
+	}
+}
+
+/* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setTOMsb_setCRCon
+		description : set timeout msb to 0xFF + set CRC enable.
+		arguments   :
+			LoRa* LoRa        --> LoRa object handler
+		returns     : Nothing
+\* ----------------------------------------------------------------------------- */
 void LoRa_setTOMsb_setCRCon(LoRa* _LoRa){
 	uint8_t read, data;
+	if(_LoRa->modulationMode == LORA_MODULATION) {
+		read = LoRa_read(_LoRa, RegModemConfig2);
+		data = read | 0x07;
+		LoRa_write(_LoRa, RegModemConfig2, data);
+	}
+	else {
+		LoRa_setCRCon(_LoRa);
+	}
 
-	read = LoRa_read(_LoRa, RegModemConfig2);
-
-	data = read | 0x07;
-	LoRa_write(_LoRa, RegModemConfig2, data);\
 	HAL_Delay(10);
 }
 
@@ -312,6 +375,39 @@ uint8_t LoRa_isvalid(LoRa* _LoRa){
 }
 
 /* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setBitrate
+		description : Set bitrate
+		arguments   :
+			LoRa*    LoRa     --> LoRa object handler
+			uint16_t  br	  --> Bit rate value in kbps
+		returns     : 1 in case of success, 0 in case of timeout
+\* ----------------------------------------------------------------------------- */
+void LoRa_setBitrate(LoRa* _LoRa, uint16_t br) {
+	if(_LoRa->modulationMode == LORA_MODULATION) return;
+	uint16_t bitRate = (RFM95_CRYSTAL_FREQ * 1000.0) / br;
+	LoRa_write(_LoRa, RegBitrateMsb, (bitRate & 0xFF00) >> 8);
+	LoRa_write(_LoRa, RegBitrateLsb, bitRate & 0x00FF);
+}
+
+/* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setSyncWord
+		description : Set sync word
+		arguments   :
+			LoRa*    LoRa     --> LoRa object handler
+			uint8_t* syncWord --> Pointer to sync word array
+			size_t   len	  --> Length of sync word array (max 8)
+		returns     : 1 in case of success, 0 in case of timeout
+\* ----------------------------------------------------------------------------- */
+void LoRa_setSyncWord(LoRa* _LoRa, uint8_t* syncWord, size_t len) {
+	// Turn on sync word settings
+	uint8_t read = LoRa_read(_LoRa, RegSyncConfig);
+	LoRa_write(_LoRa, RegSyncConfig, ((read & 0xE0) | ((len+1) | 0x18)));
+	for (int i=0; i<len; i++) {
+		LoRa_write(_LoRa, RegSyncValue1 + i, syncWord[i]);
+	}
+}
+
+/* ----------------------------------------------------------------------------- *\
 		name        : LoRa_transmit
 		description : Transmit data
 		arguments   :
@@ -358,6 +454,23 @@ uint8_t LoRa_transmit(LoRa* _LoRa, uint8_t* data, uint8_t length, uint16_t timeo
 \* ----------------------------------------------------------------------------- */
 void LoRa_startReceiving(LoRa* _LoRa){
 	LoRa_gotoMode(_LoRa, RXCONTIN_MODE);
+}
+
+/* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setFSKMode
+		description : Start set data mode to continuous or packet
+		arguments   :
+			LoRa*    LoRa     --> LoRa object handler
+			uint8_t  mode     --> Data mode type
+		returns     : Nothing
+\* ----------------------------------------------------------------------------- */
+void LoRa_setFSKMode(LoRa* _LoRa, uint8_t mode){
+	uint8_t read, data;
+	if(_LoRa->modulationMode == LORA_MODULATION) return;
+	read = LoRa_read(_LoRa, RegPacketConfig2);
+	if(mode == CONTINUOUS_MODE) data = (read & 0xBF);
+	else if(mode == PACKET_MODE) data = (read & 0xBF) | 0x40;
+	LoRa_write(_LoRa, RegPacketConfig2, data);
 }
 
 /* ----------------------------------------------------------------------------- *\
@@ -416,17 +529,26 @@ uint16_t LoRa_init(LoRa* _LoRa){
 	uint8_t    data;
 	uint8_t    read;
 
+	// Check modulation mode
+	read = LoRa_read(_LoRa, RegOpMode);
+	if((read & 0x80) == 0x80) _LoRa->modulationMode = LORA_MODULATION;
+	else {
+		if((read & 0x60) == 0x00) _LoRa->modulationMode = FSK_MODULATION;
+		else if((read & 0x60) == 0x20) _LoRa->modulationMode = OOK_MODULATION;
+	}
+
 	if(LoRa_isvalid(_LoRa)){
 		// goto sleep mode:
 			LoRa_gotoMode(_LoRa, SLEEP_MODE);
 			HAL_Delay(10);
-
-		// turn on lora mode:
-			read = LoRa_read(_LoRa, RegOpMode);
-			HAL_Delay(10);
-			data = read | 0x80;
-			LoRa_write(_LoRa, RegOpMode, data);
-			HAL_Delay(100);
+			if( _LoRa->modulationMode == LORA_MODULATION) {
+				// turn on lora mode:
+				read = LoRa_read(_LoRa, RegOpMode);
+				HAL_Delay(10);
+				data = read | 0x80;
+				LoRa_write(_LoRa, RegOpMode, data);
+				HAL_Delay(100);
+			}
 
 		// set frequency:
 			LoRa_setFrequency(_LoRa, _LoRa->frequency);
@@ -442,26 +564,40 @@ uint16_t LoRa_init(LoRa* _LoRa){
 
 		// set spreading factor, CRC on, and Timeout Msb:
 			LoRa_setTOMsb_setCRCon(_LoRa);
-			LoRa_setSpreadingFactor(_LoRa, _LoRa->spredingFactor);
-
-		// set Timeout Lsb:
-			LoRa_write(_LoRa, RegSymbTimeoutL, 0xFF);
-
-		// set bandwidth, coding rate and expilicit mode:
-			// 8 bit RegModemConfig --> | X | X | X | X | X | X | X | X |
-			//       bits represent --> |   bandwidth   |     CR    |I/E|
-			data = 0;
-			data = (_LoRa->bandWidth << 4) + (_LoRa->crcRate << 1);
-			LoRa_write(_LoRa, RegModemConfig1, data);
+			if(_LoRa->modulationMode == LORA_MODULATION) {
+				LoRa_setSpreadingFactor(_LoRa, _LoRa->spredingFactor);
+				// set Timeout Lsb:
+				LoRa_write(_LoRa, RegSymbTimeoutL, 0xFF);
+				// set bandwidth, coding rate and expilicit mode:
+				// 8 bit RegModemConfig --> | X | X | X | X | X | X | X | X |
+				//       bits represent --> |   bandwidth   |     CR    |I/E|
+				data = 0;
+				data = (_LoRa->bandWidth << 4) + (_LoRa->crcRate << 1);
+				LoRa_write(_LoRa, RegModemConfig1, data);
+			}
 
 		// set preamble:
-			LoRa_write(_LoRa, RegPreambleMsb, _LoRa->preamble >> 8);
-			LoRa_write(_LoRa, RegPreambleLsb, _LoRa->preamble >> 0);
+			if(_LoRa->modulationMode == LORA_MODULATION) {
+				LoRa_write(_LoRa, RegPreambleMsb, _LoRa->preamble >> 8);
+				LoRa_write(_LoRa, RegPreambleLsb, _LoRa->preamble >> 0);
+			}
+			else {
+				LoRa_write(_LoRa, RegPreambleDetect, 0xAA);		// Preamble detect ON, preable detect size 2 bytes, detector tolerance 0x0A (default)
+			}
 
 		// DIO mapping:   --> DIO: RxDone
-			read = LoRa_read(_LoRa, RegDioMapping1);
-			data = read | 0x3F;
-			LoRa_write(_LoRa, RegDioMapping1, data);
+			if(_LoRa->modulationMode == LORA_MODULATION) {
+				read = LoRa_read(_LoRa, RegDioMapping1);
+				data = read | 0x3F;
+				LoRa_write(_LoRa, RegDioMapping1, data);
+			}
+			else {
+				// DIO2: RxDone
+				read = LoRa_read(_LoRa, RegDioMapping1);
+				data = read | 0x3F;
+				LoRa_write(_LoRa, RegDioMapping1, data);
+			}
+
 
 		// goto standby mode:
 			LoRa_gotoMode(_LoRa, STNBY_MODE);

@@ -163,6 +163,7 @@ int main(void)
   LoRaClass.power			      = POWER_20db;					// default = 20db
   LoRaClass.overCurrentProtection = 120; 						// default = 100 mA
   LoRaClass.preamble			  = 10;		  					// default = 8;
+  LoRaClass.preamble			  = FSK_MODULATION;
 
   HAL_GPIO_WritePin(RF_SPI_NSS_GPIO_Port, RF_SPI_NSS_Pin, GPIO_PIN_SET);
 
@@ -176,6 +177,10 @@ int main(void)
 	  Blocking_LED_Blink(1);
   }
 
+  LoRa_setModulation(&LoRaClass, FSK_MODULATION);
+  LoRa_setFSKMode(&LoRaClass, PACKET_MODE);
+  LoRa_setBitrate(&LoRaClass, 300);
+
   // START CONTINUOUS RECEIVING -----------------------------------
   LoRa_startReceiving(&LoRaClass);
 
@@ -188,6 +193,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  while(1) {
+		  if(LoRa_transmit(&LoRaClass, (uint8_t*)"Testing\r\n", (uint8_t)sizeof("Testing\r\n"), 1000)) {
+			  printf("Transmit failed\r\n");
+		  }
+		  HAL_Delay(1000);
+		  if(LoRa_receive(&LoRaClass, RF_RX_Buff, sizeof("Testing\r\n"))) {
+			  printf("Nothing received\r\n");
+		  }
+	  }
 
 	  if(RF_available_bytes) {
 		  // Bytes in RF RX buffer to read
