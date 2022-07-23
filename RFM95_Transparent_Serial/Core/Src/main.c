@@ -167,6 +167,10 @@ int main(void)
 
   HAL_GPIO_WritePin(RF_SPI_NSS_GPIO_Port, RF_SPI_NSS_Pin, GPIO_PIN_SET);
 
+  LoRa_setModulation(&LoRaClass, FSK_MODULATION);
+  LoRa_setFSKMode(&LoRaClass, PACKET_MODE);
+  LoRa_setBitrate(&LoRaClass, 300);
+
   LoRa_reset(&LoRaClass);
   uint32_t result = LoRa_init(&LoRaClass);
 
@@ -176,10 +180,6 @@ int main(void)
   else if(result == LORA_UNAVAILABLE) {
 	  Blocking_LED_Blink(1);
   }
-
-  LoRa_setModulation(&LoRaClass, FSK_MODULATION);
-  LoRa_setFSKMode(&LoRaClass, PACKET_MODE);
-  LoRa_setBitrate(&LoRaClass, 300);
 
   // START CONTINUOUS RECEIVING -----------------------------------
   LoRa_startReceiving(&LoRaClass);

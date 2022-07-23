@@ -93,7 +93,7 @@ void LoRa_gotoMode(LoRa* _LoRa, int mode){
 void LoRa_setModulation(LoRa* _LoRa, int mode) {
 	uint8_t read = LoRa_read(_LoRa, RegOpMode);
 	uint8_t data = read;
-	uint8_t prev_mode = _LoRa->current_mode;
+//	uint8_t prev_mode = _LoRa->current_mode;
 
 	// Set modem to sleep mode
 	LoRa_gotoMode(_LoRa, SLEEP_MODE);
@@ -101,18 +101,21 @@ void LoRa_setModulation(LoRa* _LoRa, int mode) {
 	// Toggle first RegOpMode bit
 	if(mode == 2) {	// LoRa
 		LoRa_write(_LoRa, RegOpMode, (read & 0x7F) | 0x80);
+		_LoRa->modulationMode = LORA_MODULATION;
 	}
 	else if (mode == 1) {	// OOK
 		LoRa_write(_LoRa, RegOpMode, (read & 0x7F));
 		LoRa_write(_LoRa, RegOpMode, (read & 0x60) | 0x20);
+		_LoRa->modulationMode = OOK_MODULATION;
 	}
 	else if (mode == 0) {	// FSK
 		LoRa_write(_LoRa, RegOpMode, (read & 0x7F));
 		LoRa_write(_LoRa, RegOpMode, (read & 0x60));
+		_LoRa->modulationMode = FSK_MODULATION;
 	}
 
 	HAL_Delay(10);
-	LoRa_gotoMode(_LoRa, prev_mode);
+//	LoRa_gotoMode(_LoRa, prev_mode);
 }
 
 /* ----------------------------------------------------------------------------- *\
@@ -467,10 +470,27 @@ void LoRa_startReceiving(LoRa* _LoRa){
 void LoRa_setFSKMode(LoRa* _LoRa, uint8_t mode){
 	uint8_t read, data;
 	if(_LoRa->modulationMode == LORA_MODULATION) return;
-	read = LoRa_read(_LoRa, RegPacketConfig2);
-	if(mode == CONTINUOUS_MODE) data = (read & 0xBF);
-	else if(mode == PACKET_MODE) data = (read & 0xBF) | 0x40;
+//	read = LoRa_read(_LoRa, RegPacketConfig2);
+	if(mode == CONTINUOUS_MODE) data = 0x47;
+	else if(mode == PACKET_MODE) data = 0x7;
 	LoRa_write(_LoRa, RegPacketConfig2, data);
+}
+
+/* ----------------------------------------------------------------------------- *\
+		name        : LoRa_setPayloadLength
+		description : Start payload length
+		arguments   :
+			LoRa*    LoRa     --> LoRa object handler
+			uint16_t len      --> Payload length
+		returns     : Nothing
+\* ----------------------------------------------------------------------------- */
+void LoRa_setPayloadLength(LoRa* _LoRa, uint16_t len){
+	uint8_t read, data;
+	if(_LoRa->modulationMode == LORA_MODULATION) return;
+	read = LoRa_read(_LoRa, RegPacketConfig2);
+	if(len > 2047) len = 2047;
+	LoRa_write(_LoRa, RegPacketConfig2, ((read & 0xF8) | (len>>8)));
+	LoRa_write(_LoRa, RegPayloadLength, len & 0xFF);
 }
 
 /* ----------------------------------------------------------------------------- *\
