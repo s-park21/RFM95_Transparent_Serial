@@ -170,6 +170,15 @@ int main(void)
   LoRa_setModulation(&LoRaClass, FSK_MODULATION);
   LoRa_setFSKMode(&LoRaClass, PACKET_MODE);
   LoRa_setBitrate(&LoRaClass, 300);
+  LoRa_setPayloadLength(&LoRaClass, 2047);
+
+  uint8_t read = LoRa_read(&LoRaClass, RegPacketConfig1);
+  read = LoRa_read(&LoRaClass, RegPacketConfig2);
+  read = LoRa_read(&LoRaClass, RegOpMode);
+  read = LoRa_read(&LoRaClass, RegBitrateMsb);
+  read = LoRa_read(&LoRaClass, RegBitrateLsb);
+  read = LoRa_read(&LoRaClass, RegDioMapping1);
+  read = LoRa_read(&LoRaClass, RegDioMapping2);
 
   LoRa_reset(&LoRaClass);
   uint32_t result = LoRa_init(&LoRaClass);

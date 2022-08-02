@@ -19,7 +19,8 @@
 ../Core/Src/LoRa.c:423:9:LoRa_transmit	32	static
 ../Core/Src/LoRa.c:458:6:LoRa_startReceiving	16	static
 ../Core/Src/LoRa.c:470:6:LoRa_setFSKMode	24	static
-../Core/Src/LoRa.c:488:9:LoRa_receive	48	static
-../Core/Src/LoRa.c:518:5:LoRa_getRSSI	24	static
-../Core/Src/LoRa.c:531:10:LoRa_init	24	static
-../Core/Src/LoRa.c:628:9:LoRa_received_bytes	16	static
+../Core/Src/LoRa.c:487:6:LoRa_setPayloadLength	24	static
+../Core/Src/LoRa.c:505:9:LoRa_receive	48	static
+../Core/Src/LoRa.c:535:5:LoRa_getRSSI	24	static
+../Core/Src/LoRa.c:548:10:LoRa_init	24	static
+../Core/Src/LoRa.c:645:9:LoRa_received_bytes	16	static

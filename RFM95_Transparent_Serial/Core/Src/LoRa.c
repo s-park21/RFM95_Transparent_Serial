@@ -582,6 +582,11 @@ uint16_t LoRa_init(LoRa* _LoRa){
 		// set LNA gain:
 			LoRa_write(_LoRa, RegLna, 0x23);
 
+		// Set Tx start condition
+			if(_LoRa->modulationMode != LORA_MODULATION) {
+				LoRa_write(_LoRa, RegFifoThresh, 0x80);
+			}
+
 		// set spreading factor, CRC on, and Timeout Msb:
 			LoRa_setTOMsb_setCRCon(_LoRa);
 			if(_LoRa->modulationMode == LORA_MODULATION) {

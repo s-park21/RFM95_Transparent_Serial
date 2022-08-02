@@ -86,7 +86,7 @@
 #define RegPreambleDetect			0x1F
 #define RegPreambleMsb				0x20
 #define RegPreambleLsb				0x21
-#define RegPayloadLength			0x22
+#define RegPayloadLength			0x32
 #define RegSyncConfig				0x27
 #define RegSyncValue1				0x28
 #define RegSyncValue2				0x29
@@ -96,6 +96,7 @@
 #define RegSyncValue6				0x2d
 #define RegSyncValue7				0x2e
 #define RegSyncValue8				0x2f
+#define RegFifoThresh				0x35
 #define RegDioMapping1				0x40
 #define RegDioMapping2				0x41
 #define RegVersion						0x42
@@ -151,6 +152,7 @@ void LoRa_setBitrate(LoRa* _LoRa, uint16_t bitRate);
 void LoRa_setSyncWord(LoRa* _LoRa, uint8_t* syncWord, size_t len);
 uint8_t LoRa_transmit(LoRa* _LoRa, uint8_t* data, uint8_t length, uint16_t timeout);
 void LoRa_startReceiving(LoRa* _LoRa);
+void LoRa_setPayloadLength(LoRa* _LoRa, uint16_t len);
 uint8_t LoRa_receive(LoRa* _LoRa, uint8_t* data, uint8_t length);
 void LoRa_receive_IT(LoRa* _LoRa, uint8_t* data, uint8_t length);
 uint8_t LoRa_received_bytes(LoRa* _LoRa);

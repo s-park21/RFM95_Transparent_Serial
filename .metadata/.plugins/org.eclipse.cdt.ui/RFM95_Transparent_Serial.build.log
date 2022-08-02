@@ -1,10 +1,42 @@
-18:16:03 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
+12:24:43 **** Incremental Build of configuration Debug for project RFM95_Transparent_Serial ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/LoRa.h:1:1: warning: multi-line comment [-Wcomment]
+    1 | // -------------------------------------------------- \\
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:171:3: warning: implicit declaration of function 'LoRa_setFSKMode'; did you mean 'LoRa_gotoMode'? [-Wimplicit-function-declaration]
+  171 |   LoRa_setFSKMode(&LoRaClass, PACKET_MODE);
+      |   ^~~~~~~~~~~~~~~
+      |   LoRa_gotoMode
+../Core/Src/main.c:187:4: warning: implicit declaration of function 'Blocking_LED_Blink' [-Wimplicit-function-declaration]
+  187 |    Blocking_LED_Blink(1);
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:243:7: warning: implicit declaration of function 'CDC_Transmit_HS' [-Wimplicit-function-declaration]
+  243 |       CDC_Transmit_HS(serialBuff, MAX_DATA_SIZE(MAX_RF_PACKET_SIZE, HEADER_STRING_SIZE) + data_len);
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c:175:11: warning: variable 'read' set but not used [-Wunused-but-set-variable]
+  175 |   uint8_t read = LoRa_read(&LoRaClass, RegPacketConfig1);
+      |           ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:664:6: warning: conflicting types for 'Blocking_LED_Blink'
+  664 | void Blocking_LED_Blink(uint8_t freq) {
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:187:4: note: previous implicit declaration of 'Blocking_LED_Blink' was here
+  187 |    Blocking_LED_Blink(1);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "RFM95_Transparent_Serial.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Angus McLennan\Documents\RFM95_Transparent_Serial\RFM95_Transparent_Serial\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RFM95_Transparent_Serial.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RFM95_Transparent_Serial.elf
+ 
 arm-none-eabi-size   RFM95_Transparent_Serial.elf 
+arm-none-eabi-objdump -h -S  RFM95_Transparent_Serial.elf  > "RFM95_Transparent_Serial.list"
    text	   data	    bss	    dec	    hex	filename
-  42124	    368	   9560	  52052	   cb54	RFM95_Transparent_Serial.elf
+  51848	    376	  10472	  62696	   f4e8	RFM95_Transparent_Serial.elf
 Finished building: default.size.stdout
  
+Finished building: RFM95_Transparent_Serial.list
+ 
 
-18:16:04 Build Finished. 0 errors, 0 warnings. (took 713ms)
+12:24:46 Build Finished. 0 errors, 6 warnings. (took 2s.990ms)
 
